@@ -38,13 +38,6 @@
 
     
     <entry>
-      <title><![CDATA[数据结构]]></title>
-      <url>%2F2017%2F04%2F23%2F%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%2F</url>
-      <content type="text"><![CDATA[]]></content>
-    </entry>
-
-    
-    <entry>
       <title><![CDATA[版权声明]]></title>
       <url>%2F2017%2F04%2F22%2F%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E%2F</url>
       <content type="text"><![CDATA[创建该博客网站是受 stormzhang 的影响，写博客的初衷也是以学习、记录、交流为主，若网站博客中有侵权、未注明明显出处等情况发生，请用邮箱联系我。 对于博客中涉及类似侵权、未在明显位置注明出处等行为，请原创作者原谅，这非博主本意，可能参照的东西太多未细分或者疏忽导致。 另外，本站博客可任意转载，不必获取授权或者带有转载等字眼。但若发生被转载的文章是本站博客中的非原创作品，而转载者又未声明版权所有者等类似情况的，请转载者自行负责。 本版权声明长期有效，未尽事宜，请用邮箱联系我，Email：m8538343069@foxmail.com。 04/22/2017 Jan9th]]></content>
@@ -52,16 +45,16 @@
 
     
     <entry>
-      <title><![CDATA[About Hexo]]></title>
-      <url>%2F2017%2F04%2F22%2FAbout-Hexo%2F</url>
-      <content type="text"><![CDATA[Quick Start Welcome to Hexo ! Check documentation for more info. Any problems when using Hexo, find the answer in troubleshooting or on GitHub. Create a new post1$ hexo new "New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <title><![CDATA[Hexo NexT 使用中的小细节]]></title>
+      <url>%2F2017%2F04%2F22%2FHexo-NexT-%E4%BD%BF%E7%94%A8%E4%B8%AD%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82%2F</url>
+      <content type="text"><![CDATA[Hexo NexT 应用中的小技巧，使用过程中不定期更新。 中文模式 站点：language: zh-Hans 更新生效 主题配置和文章，修改后刷新浏览器可以直接生效；站点配置更改需要重新生成才能生效。 本地搜索 安装 hexo-generator-searchdb 插件，执行 npm install hexo-generator-searchdb --save 增加站点配置，如下：&gt; search: path: search.xml field: post format: html limit: 10000 创建分类 创建分类页 hexo new page categories 分类页 index.md 增加 type: &quot;categories&quot; 实现分类跳转 创建 tag 页 创建 tag 页 hexo new page tags tag 页 index.md 增加 type: &quot;tags&quot; 实现 tag 跳转 more 字段 使用 NexT 主题可以在文章中增加 &lt;!--more--&gt; ，more 字段上的为摘要。 修改模版 scaffolds 文件夹中 post.md page.md draft.md 文件为模版文件 --#- title: {{ title }} categories: tags: comments: false --#- &lt;!#--more--&gt; 去掉所有的 # 成为自定义模版文件 多 tag tag: [Hexo,NexT] 英文符号，中间有个空格。 创建草稿 hexo new draft Hello 在 source/-drafts 下生成 Hello.md 文件 默认不预览，网站配置 render_drafts 节点更改渲染/预览。 或使用 hexo server --drafts 开启临时预览。 发布草稿 hexo publish Hello 多个分类 同一篇文章不支持两个分类字数统计 更改 \themes\next\ _config.yml 中 busuanzi_count 节点 执行npm install hexo-wordcount --save 插件名后加 @2.0.1 指定版本 打赏禁止动画 next/source/css/_common/components/post/post-reward.styl 中注释 alipay 和 wechart 动画 内链颜色 themes\next\source\css\_common\components\post\post.styl 中自定义样式&gt; .post-body p a{color: #0593d3; border-bottom: none; &amp;:hover { color: #0477ab; text-decoration: underline; } } 查看版本 使用 hexo -v 卸载 npm uninstall hexo-cli -g # 未实践过npm remove hexo-generator-searchdb 置顶 使用 npm install --save hexo-generator-index 插件，多个置顶按等级和时间顺序。 更改 ../node_modules/hexo-generator-index/lib/generator.js 文件 文章中增加 top: true 配置 版权所有者：Netcan_Space :解决 Hexo 置顶问题 ico 转换 在线制作工具 网站标签页 Hexo系列教程之三：next主题的配置和优化 站点收录 $ npm install hexo-generator-baidu-sitemap --save$ npm install hexo-generator-sitemap --save 网站配置中增加节点 sitemap: path: sitemap.xml baidusitemap: path: baidusitemap.xml 生成，预览$ hexo g$ hexo s如果不生效就先执行$ hexo clean 版权所有者：svendHexo系列：(四)Hexo博客提交百度和Google收录 远程仓库更改 仓库地址查看 git remote -v 更换仓库 git remote set-url origin &lt;repo&gt; 本地仓库改名 git remote rename [current name] [new name] 移除本地仓库名 git remote rm origin 此操作所有 origin 均会被移除 错误警告 warning: LF will be replaced by CRLF in XXXXXXXXXXXXXX.的警告。git config --global core.autocrlf false unix/Linux/mac/windows 不同系统对应回车、换行的定义不一样，Git 存储时，有针对于 不同平台间的转换，是某种操作导致了这种转换被开启，与二进制存储时是否可逆有关系，具体的不是十分明白。 全面教程格子林ll 简书]]></content>
     </entry>
 
     
     <entry>
-      <title><![CDATA[Hexo NexT 使用中的小细节]]></title>
-      <url>%2F2017%2F04%2F22%2FHexo-NexT-%E4%BD%BF%E7%94%A8%E4%B8%AD%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82%2F</url>
-      <content type="text"><![CDATA[Hexo NexT 应用中的小技巧，使用过程中不定期更新。 中文模式 站点：language: zh-Hans 更新生效 主题配置和文章，修改后刷新浏览器可以直接生效；站点配置更改需要重新生成才能生效。 本地搜索 安装 hexo-generator-searchdb 插件，执行 npm install hexo-generator-searchdb --save 增加站点配置，如下：&gt; search: path: search.xml field: post format: html limit: 10000 创建分类 创建分类页 hexo new page categories 分类页 index.md 增加 type: &quot;categories&quot; 实现分类跳转 创建 tag 页 创建 tag 页 hexo new page tags tag 页 index.md 增加 type: &quot;tags&quot; 实现 tag 跳转 more 字段 使用 NexT 主题可以在文章中增加 &lt;!--more--&gt; ，more 字段上的为摘要。 修改模版 scaffolds 文件夹中 post.md page.md draft.md 文件为模版文件 --#- title: {{ title }} categories: tags: comments: false --#- &lt;!#--more--&gt; 去掉所有的 # 成为自定义模版文件 多 tag tag: [Hexo,NexT] 英文符号，中间有个空格。 创建草稿 hexo new draft Hello 在 source/-drafts 下生成 Hello.md 文件 默认不预览，网站配置 render_drafts 节点更改渲染/预览。 或使用 hexo server --drafts 开启临时预览。 发布草稿 hexo publish Hello 多个分类 同一篇文章不支持两个分类字数统计 更改 \themes\next\ _config.yml 中 busuanzi_count 节点 执行npm install hexo-wordcount --save 插件名后加 @2.0.1 指定版本 打赏禁止动画 next/source/css/_common/components/post/post-reward.styl 中注释 alipay 和 wechart 动画 内链颜色 themes\next\source\css\_common\components\post\post.styl 中自定义样式&gt; .post-body p a{color: #0593d3; border-bottom: none; &amp;:hover { color: #0477ab; text-decoration: underline; } } 查看版本 使用 hexo -v 卸载 npm uninstall hexo-cli -g # 未实践过npm remove hexo-generator-searchdb 置顶 使用 npm install --save hexo-generator-index 插件，多个置顶按等级和时间顺序。 更改 ../node_modules/hexo-generator-index/lib/generator.js 文件 文章中增加 top: true 配置 版权所有者：Netcan_Space :解决 Hexo 置顶问题 ico 转换 在线制作工具 网站标签页 Hexo系列教程之三：next主题的配置和优化 站点收录 $ npm install hexo-generator-baidu-sitemap --save$ npm install hexo-generator-sitemap --save 网站配置中增加节点 sitemap: path: sitemap.xml baidusitemap: path: baidusitemap.xml 生成，预览$ hexo g$ hexo s如果不生效就先执行$ hexo clean 版权所有者：svendHexo系列：(四)Hexo博客提交百度和Google收录 远程仓库更改 仓库地址查看 git remote -v 更换仓库 git remote set-url origin &lt;repo&gt; 本地仓库改名 git remote rename [current name] [new name] 移除本地仓库名 git remote rm origin 此操作所有 origin 均会被移除 错误警告 warning: LF will be replaced by CRLF in XXXXXXXXXXXXXX.的警告。git config --global core.autocrlf false unix/Linux/mac/windows 不同系统对应回车、换行的定义不一样，Git 存储时，有针对于 不同平台间的转换，是某种操作导致了这种转换被开启，与二进制存储时是否可逆有关系，具体的不是十分明白。 全面教程格子林ll 简书]]></content>
+      <title><![CDATA[About Hexo]]></title>
+      <url>%2F2017%2F04%2F22%2FAbout-Hexo%2F</url>
+      <content type="text"><![CDATA[Quick Start Welcome to Hexo ! Check documentation for more info. Any problems when using Hexo, find the answer in troubleshooting or on GitHub. Create a new post1$ hexo new "New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
     </entry>
 
     
