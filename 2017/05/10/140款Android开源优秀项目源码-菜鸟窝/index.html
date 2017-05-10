@@ -1,0 +1,1440 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="L5bb_5IB-UnTCzgG5fo_ZhlTl43GDgiiT-kPSd_QqXU" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Jan9th, Hexo" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="开源项目">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="140款Android开源优秀项目源码-菜鸟窝">
+<meta property="og:url" content="https://Jan9th.github.io/2017/05/10/140款Android开源优秀项目源码-菜鸟窝/index.html">
+<meta property="og:site_name" content="Jan9th">
+<meta property="og:description" content="开源项目">
+<meta property="og:updated_time" content="2017-05-10T14:02:37.145Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="140款Android开源优秀项目源码-菜鸟窝">
+<meta name="twitter:description" content="开源项目">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://Jan9th.github.io/2017/05/10/140款Android开源优秀项目源码-菜鸟窝/"/>
+
+
+
+
+
+  <title>140款Android开源优秀项目源码-菜鸟窝 | Jan9th</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-97695037-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8cf159cbc226f27c099ff74e7001c12a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jan9th</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">lunar year</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://Jan9th.github.io/2017/05/10/140款Android开源优秀项目源码-菜鸟窝/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jan9th">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jan9th">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                140款Android开源优秀项目源码-菜鸟窝
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-10T22:00:47+08:00">
+                2017-05-10
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-05-10T22:02:37+08:00">
+                2017-05-10
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/开源项目/" itemprop="url" rel="index">
+                    <span itemprop="name">开源项目</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+             <span id="/2017/05/10/140款Android开源优秀项目源码-菜鸟窝/" class="leancloud_visitors" data-flag-title="140款Android开源优秀项目源码-菜鸟窝">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span title="字数统计">
+                  3,444
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                <span title="阅读时长">
+                  15
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>开源项目</p>
+</blockquote>
+<a id="more"></a>
+<p>BeautifulRefreshLayout-漂亮的美食下拉刷新<br><a href="https://github.com/android-cjj/BeautifulRefreshLayout/tree/BeautifulRefreshForFood" target="_blank" rel="external">https://github.com/android-cjj/BeautifulRefreshLayout/tree/BeautifulRefreshForFood</a></p>
+<p>Material Design-动画风格的选项卡tab切换功能<br><a href="https://github.com/neokree/MaterialTabs" target="_blank" rel="external">https://github.com/neokree/MaterialTabs</a></p>
+<p>TwinklingRefreshLayout-支持下拉刷新和上拉加载的RefreshLayout,自带越界回弹效果<br><a href="https://github.com/lcodecorex/TwinklingRefreshLayout" target="_blank" rel="external">https://github.com/lcodecorex/TwinklingRefreshLayout</a></p>
+<p>DialogLoadding-Android开发之常用的loading等待效果实现，仿微博等待动画。两种实现方式详解<br><a href="https://github.com/QQ986945193/DialogLoadding" target="_blank" rel="external">https://github.com/QQ986945193/DialogLoadding</a></p>
+<p>owspace-完整高仿单读的APP，模仿得非常精美，基于MVP+Dagger2+Retrofit2.0+Rxjava<br><a href="https://github.com/babylikebird/owspace" target="_blank" rel="external">https://github.com/babylikebird/owspace</a></p>
+<p>GSYVideoPlayer-android视频播放器，支持基本的拖动，声音、亮度调节，支持边播边缓存<br><a href="https://github.com/CarGuo/GSYVideoPlayer" target="_blank" rel="external">https://github.com/CarGuo/GSYVideoPlayer</a></p>
+<p>NumberKeyboard-仿造android端闲鱼发布选择价格数字键盘自定义数字键盘<br><a href="https://github.com/xuejinwei/NumberKeyboard" target="_blank" rel="external">https://github.com/xuejinwei/NumberKeyboard</a></p>
+<p>SwipeRecyclerView-自定义下拉刷新上拉加载控件SwipeRefreshLayout+recyclerView<br><a href="https://github.com/niniloveyou/SwipeRecyclerView" target="_blank" rel="external">https://github.com/niniloveyou/SwipeRecyclerView</a></p>
+<p>FloatingView-android能够让View执行漂亮的漂浮动画的库<br><a href="https://github.com/UFreedom/FloatingView" target="_blank" rel="external">https://github.com/UFreedom/FloatingView</a></p>
+<p>TyperEditText-Android仿业问打字机效果，很炫酷<br><a href="https://github.com/andyxialm/TyperEditText" target="_blank" rel="external">https://github.com/andyxialm/TyperEditText</a></p>
+<p>CircularMenu-android自动绘制遥控器界面CircularMenu<br><a href="https://github.com/sungerk/CircularMenu/" target="_blank" rel="external">https://github.com/sungerk/CircularMenu/</a></p>
+<p>ConnectListView-ConnectListView联动,listView三级联动<br><a href="https://github.com/maning0303/ConnectListView" target="_blank" rel="external">https://github.com/maning0303/ConnectListView</a></p>
+<p>DylanStepCount-Android精准计步器(小米,魅族,华为上可用)<br><a href="https://github.com/linglongxin24/DylanStepCount" target="_blank" rel="external">https://github.com/linglongxin24/DylanStepCount</a></p>
+<p>MultiType-FilePicker-MultiType-FilePicker-android一款轻量级的文件选择器,支持多种文件类型<br><a href="https://github.com/fishwjy/MultiType-FilePicker" target="_blank" rel="external">https://github.com/fishwjy/MultiType-FilePicker</a></p>
+<p>SuperTextView-一个功能强大的TextView,可以满足日常大部分布局方式<br><a href="https://github.com/lygttpod/SuperTextView" target="_blank" rel="external">https://github.com/lygttpod/SuperTextView</a></p>
+<p>Android-SpinKit-Android-SpinKit多个漂亮的加载效果<br><a href="https://github.com/ybq/Android-SpinKit" target="_blank" rel="external">https://github.com/ybq/Android-SpinKit</a></p>
+<p>PullToRefreshAndLoadMore-一个轻量下拉刷新上拉加载更多控件，已封装ListView<br><a href="https://github.com/woxingxiao/PullToRefreshAndLoadMore" target="_blank" rel="external">https://github.com/woxingxiao/PullToRefreshAndLoadMore</a></p>
+<p>BluetoothHelper-安卓蓝牙操作库，把蓝牙请求封装像Http一样<br><a href="https://github.com/a-voyager/BluetoothHelper" target="_blank" rel="external">https://github.com/a-voyager/BluetoothHelper</a></p>
+<p>Luban-android最接近微信朋友圈的图片压缩算法<br><a href="https://github.com/Curzibn/Luban" target="_blank" rel="external">https://github.com/Curzibn/Luban</a></p>
+<p>CBDialog-android一个快速创建对话框的工具类库<br><a href="https://github.com/yilylong/CBDialog" target="_blank" rel="external">https://github.com/yilylong/CBDialog</a></p>
+<p>UserGuideView-androidy应用实现用户指引view<br><a href="https://github.com/yilylong/UserGuideView" target="_blank" rel="external">https://github.com/yilylong/UserGuideView</a></p>
+<p>okhttp一个让网络请求更简单的框架<br><a href="https://github.com/jeasonlzy/okhttp-OkGo" target="_blank" rel="external">https://github.com/jeasonlzy/okhttp-OkGo</a></p>
+<p>TwinklingRefreshLayout-下拉刷新和上拉加载的RefreshLayout,自带越界回弹效果,支持RecyclerView,AbsListView,ScrollView,WebView<br><a href="https://github.com/lcodecorex/TwinklingRefreshLayout" target="_blank" rel="external">https://github.com/lcodecorex/TwinklingRefreshLayout</a></p>
+<p>StickerCamera-android一款集成了相机,图片裁剪,给图片贴贴图打标签的APP<br><a href="https://github.com/Skykai521/StickerCamera" target="_blank" rel="external">https://github.com/Skykai521/StickerCamera</a></p>
+<p>AndroidFire-一款新闻阅读App框架基于Material Desig<br><a href="https://github.com/jaydenxiao2016/AndroidFire" target="_blank" rel="external">https://github.com/jaydenxiao2016/AndroidFire</a></p>
+<p>ViewPagerCards-android ViewPagerCards卡片切换效果源码<br><a href="https://github.com/rubensousa/ViewPagerCards" target="_blank" rel="external">https://github.com/rubensousa/ViewPagerCards</a></p>
+<p>Douya-Material Design 的豆芽客户端完整源码<br><a href="https://github.com/DreaminginCodeZH/Douya" target="_blank" rel="external">https://github.com/DreaminginCodeZH/Douya</a></p>
+<p>RestAPP-android网易云音乐界面源码<br><a href="https://github.com/sakurajiang/RestAPP" target="_blank" rel="external">https://github.com/sakurajiang/RestAPP</a></p>
+<p>huabanDemo-android 应用material design版的花瓣网App<br><a href="https://github.com/LiCola/huabanDemo" target="_blank" rel="external">https://github.com/LiCola/huabanDemo</a></p>
+<p>slidingtutorial-android-slidingtutorial-android创建视差效果引导页的库自定义强使用简单<br><a href="https://github.com/Cleveroad/slidingtutorial-android" target="_blank" rel="external">https://github.com/Cleveroad/slidingtutorial-android</a></p>
+<p>DropDownMenu-android实用的多条件筛选菜单,非popupWindow实现无卡顿<br><a href="https://github.com/dongjunkun/DropDownMenu" target="_blank" rel="external">https://github.com/dongjunkun/DropDownMenu</a></p>
+<p>CouponView-android开发半圆锯齿背景虚线边框组合实现简单优惠券效果<br><a href="https://github.com/dongjunkun/CouponView" target="_blank" rel="external">https://github.com/dongjunkun/CouponView</a></p>
+<p>Tuikan-一款集知乎头条,美图，视频于一体的休闲阅读app源码<br><a href="https://github.com/homcin/Tuikan" target="_blank" rel="external">https://github.com/homcin/Tuikan</a></p>
+<p>UPMiss-andoorid一个完整的生日管理App<br><a href="https://github.com/qiujuer/UPMiss" target="_blank" rel="external">https://github.com/qiujuer/UPMiss</a></p>
+<p>DropDownMenu-android完整的筛选器解决方案DropDownMenu<br><a href="https://github.com/baiiu/DropDownMenu" target="_blank" rel="external">https://github.com/baiiu/DropDownMenu</a></p>
+<p>StepView-android物流跟踪指示器StepView<br><a href="https://github.com/baoyachi/StepView" target="_blank" rel="external">https://github.com/baoyachi/StepView</a></p>
+<p>StylishMusicPlayer-一个超棒的Android Music Player源码<br><a href="https://github.com/ryanhoo/StylishMusicPlayer" target="_blank" rel="external">https://github.com/ryanhoo/StylishMusicPlayer</a></p>
+<p>MaterialTabs-Material Design动画风格的选项卡tab切换功能<br><a href="https://github.com/neokree/MaterialTabs" target="_blank" rel="external">https://github.com/neokree/MaterialTabs</a></p>
+<p>GankWithZhihu-阅读类App（MVP + RxJava + Retrofit）<br><a href="https://github.com/Werb/GankWithZhihu" target="_blank" rel="external">https://github.com/Werb/GankWithZhihu</a></p>
+<p>MyCalendarDemo-一款Android日历提醒软件<br><a href="https://github.com/Werb/MyCalendarDemo" target="_blank" rel="external">https://github.com/Werb/MyCalendarDemo</a></p>
+<p>MaterialHome-基于Material Design的图书展示类完整app采用的是MD设计风格<br><a href="https://github.com/hymanme/MaterialHome" target="_blank" rel="external">https://github.com/hymanme/MaterialHome</a></p>
+<p>UpdateDemo-android app自动检测更新库<br><a href="https://github.com/hugeterry/UpdateDemo" target="_blank" rel="external">https://github.com/hugeterry/UpdateDemo</a></p>
+<p>TaoSchool-android一款基于Material Desgin设计的APP<br><a href="https://github.com/Hankkin/TaoSchool" target="_blank" rel="external">https://github.com/Hankkin/TaoSchool</a></p>
+<p>RecyclerViewCardGallery-android使用RecyclerView实现Gallery画廊效果<br><a href="https://github.com/huazhiyuan2008/RecyclerViewCardGallery/" target="_blank" rel="external">https://github.com/huazhiyuan2008/RecyclerViewCardGallery/</a></p>
+<p>CKCamera-android一个拍照并裁剪拍出照片的项目<br><a href="https://github.com/ChrisKyle/CKCamera" target="_blank" rel="external">https://github.com/ChrisKyle/CKCamera</a></p>
+<p>SuperIndicator-android SuperIndicator 广告轮播源码<br><a href="https://github.com/hejunlin2013/SuperIndicator" target="_blank" rel="external">https://github.com/hejunlin2013/SuperIndicator</a></p>
+<p>SignUpAnimation-android一个绚丽的注册动画界面<br><a href="https://github.com/qike2015/SignUpAnimation" target="_blank" rel="external">https://github.com/qike2015/SignUpAnimation</a></p>
+<p>XRecyclerView-andorid RecyclerView下拉刷新，上拉加载更多<br><a href="https://github.com/jianghejie/XRecyclerView" target="_blank" rel="external">https://github.com/jianghejie/XRecyclerView</a></p>
+<p>AutoInstaller-android应用自动下载静默安装<br><a href="https://github.com/a-voyager/AutoInstaller" target="_blank" rel="external">https://github.com/a-voyager/AutoInstaller</a></p>
+<p>SeatTable-android在线电影票选座Demo<br><a href="https://github.com/qifengdeqingchen/SeatTable" target="_blank" rel="external">https://github.com/qifengdeqingchen/SeatTable</a></p>
+<p>android-adDialog-android一个简单强大的广告活动弹窗控件<br><a href="https://github.com/yipianfengye/android-adDialog" target="_blank" rel="external">https://github.com/yipianfengye/android-adDialog</a></p>
+<p>Android-FilePicker-android图片和文档选择器<br><a href="https://github.com/DroidNinja/Android-FilePicker" target="_blank" rel="external">https://github.com/DroidNinja/Android-FilePicker</a></p>
+<p>ViewPagerCards-android卡片切换效果ViewPagerCards<br><a href="https://github.com/rubensousa/ViewPagerCards/" target="_blank" rel="external">https://github.com/rubensousa/ViewPagerCards/</a></p>
+<p>CoCoin-一款完整的记账app(附带源码)<br><a href="https://github.com/Nightonke/CoCoin" target="_blank" rel="external">https://github.com/Nightonke/CoCoin</a></p>
+<p>AndroidReview-一款面向Android开发者的一款面试复习App<br><a href="https://github.com/envyfan/AndroidReview" target="_blank" rel="external">https://github.com/envyfan/AndroidReview</a></p>
+<p>Douya-开源Material Design豆瓣客户端源码<br><a href="https://github.com/DreaminginCodeZH/Douya" target="_blank" rel="external">https://github.com/DreaminginCodeZH/Douya</a></p>
+<p>android脑筋急转弯（完整数据版）源码<br><a href="http://pan.baidu.com/s/1c17AWXM" target="_blank" rel="external">http://pan.baidu.com/s/1c17AWXM</a>  zkw6</p>
+<p>DateScroller-探索日期滚轮控件的源码<br><a href="https://github.com/SpikeKing/DateScroller" target="_blank" rel="external">https://github.com/SpikeKing/DateScroller</a></p>
+<p>ZLayoutManager-五行代码实现 炫动滑动 卡片层叠布局，仿探探、人人影视订阅界面 简单&amp;优雅：LayoutManager+ItemTouchHelper<br><a href="https://github.com/mcxtzhang/ZLayoutManager" target="_blank" rel="external">https://github.com/mcxtzhang/ZLayoutManager</a></p>
+<p>RNPolymerPo-基于 React Native 的 Android 企业级应用 Demo。<br><a href="https://github.com/yanbober/RNPolymerPo" target="_blank" rel="external">https://github.com/yanbober/RNPolymerPo</a></p>
+<p>BoomMenu-漂亮的菜单弹出控件 BoomMenu<br><a href="https://github.com/Nightonke/BoomMenu" target="_blank" rel="external">https://github.com/Nightonke/BoomMenu</a></p>
+<p>MobileSafe-MobileSafe 是一个下载过两万并且非常适合初学者学习的项目(没错就是黑马手机卫士)<br><a href="https://github.com/JessYanCoding/MobileSafe" target="_blank" rel="external">https://github.com/JessYanCoding/MobileSafe</a></p>
+<p>KuaiChuan-仿茄子快传的一款文件传输应用<br><a href="https://github.com/mayubao/KuaiChuan" target="_blank" rel="external">https://github.com/mayubao/KuaiChuan</a></p>
+<p>SImageView-一个实用方便的图片控件SImageView<br><a href="https://github.com/suzeyu1992/SImageView" target="_blank" rel="external">https://github.com/suzeyu1992/SImageView</a></p>
+<p>WowSplash-不规则扩散的splash<br><a href="https://github.com/githubwing/WowSplash" target="_blank" rel="external">https://github.com/githubwing/WowSplash</a></p>
+<p>android-FancyBehaviorDemo-使用 CoordinatorLayout 实现复杂联动效果<br><a href="https://github.com/unixzii/android-FancyBehaviorDemo" target="_blank" rel="external">https://github.com/unixzii/android-FancyBehaviorDemo</a></p>
+<p>LbaizxfPulltoRefresh-仿健客、京东、天猫下拉刷新加载动画实现<br><a href="https://github.com/leibing8912/LbaizxfPulltoRefresh" target="_blank" rel="external">https://github.com/leibing8912/LbaizxfPulltoRefresh</a></p>
+<p>ZoomHeader-饿了么是怎么让Image变成详情页的<br><a href="https://github.com/githubwing/ZoomHeader" target="_blank" rel="external">https://github.com/githubwing/ZoomHeader</a></p>
+<p>XDroid-轻量级Android快速开发框架<br><a href="https://github.com/limedroid/XDroid" target="_blank" rel="external">https://github.com/limedroid/XDroid</a></p>
+<p>CustomTextLayout-Android自定义组合控件（标题栏+组合布局）非常强大<br><a href="https://github.com/ithedan/CustomTextLayout" target="_blank" rel="external">https://github.com/ithedan/CustomTextLayout</a></p>
+<p>QQ-高仿腾讯QQ，代码十分优雅<br><a href="https://github.com/HuTianQi/QQ" target="_blank" rel="external">https://github.com/HuTianQi/QQ</a></p>
+<p>YingBeautyNote-订个小目标，写个印象笔记<br><a href="https://github.com/HuTianQi/YingBeautyNote" target="_blank" rel="external">https://github.com/HuTianQi/YingBeautyNote</a></p>
+<p>ZuiMeiTAG-用recyclerView实现最美应用底栏<br><a href="https://github.com/huage2580/ZuiMeiTAG" target="_blank" rel="external">https://github.com/huage2580/ZuiMeiTAG</a></p>
+<p>ZuiMeiTAG-深入探索通知与插件的实时刷新<br><a href="https://github.com/SpikeKing/TimerAppWidget" target="_blank" rel="external">https://github.com/SpikeKing/TimerAppWidget</a></p>
+<p>AnimationMenu-android 软软的动画弹出菜单，基于Facebook的Rebuond<br><a href="https://github.com/CarGuo/AnimationMenu" target="_blank" rel="external">https://github.com/CarGuo/AnimationMenu</a></p>
+<p>WaveView-高仿百度外卖个人中心，让你的界面和我一起浪起来<br><a href="https://github.com/1139618418/WaveView" target="_blank" rel="external">https://github.com/1139618418/WaveView</a></p>
+<p>shopcar-仿饿了么购物车下单效果<br><a href="https://github.com/917386389/shopcar" target="_blank" rel="external">https://github.com/917386389/shopcar</a></p>
+<p>RxJavaRetrofitOkhttpMvp-时下流行的RxJava+Retrofit+Okhttp+Mvp封装的一个demo<br><a href="https://github.com/gslovemy/RxJavaRetrofitOkhttpMvp" target="_blank" rel="external">https://github.com/gslovemy/RxJavaRetrofitOkhttpMvp</a></p>
+<p>BitmapWaveView-安卓自定义View在bitmap中玩转大波浪进度<br><a href="https://github.com/AndroidMsky/BitmapWaveView" target="_blank" rel="external">https://github.com/AndroidMsky/BitmapWaveView</a></p>
+<p>Android-PickerView-Library-Android高仿ios pickerView<br><a href="https://github.com/Airsaid/Android-PickerView-Library" target="_blank" rel="external">https://github.com/Airsaid/Android-PickerView-Library</a></p>
+<p>CustomNavigatorBar-Android通用标题栏组合控件<br><a href="https://github.com/wangluAndroid/CustomNavigatorBar" target="_blank" rel="external">https://github.com/wangluAndroid/CustomNavigatorBar</a></p>
+<p>SwipeDelMenuLayout-史上最简单，一步集成侧滑(删除)菜单，高仿QQ、IOS<br><a href="https://github.com/mcxtzhang/SwipeDelMenuLayout" target="_blank" rel="external">https://github.com/mcxtzhang/SwipeDelMenuLayout</a></p>
+<p>DragFooterView-向左拖拽跳转至“更多页面”的通用控件<br><a href="https://github.com/uin3566/DragFooterView" target="_blank" rel="external">https://github.com/uin3566/DragFooterView</a></p>
+<p>VRefreshLayout-Android下拉刷新控件之header置顶显示效果<br><a href="https://github.com/ileelay/VRefreshLayout" target="_blank" rel="external">https://github.com/ileelay/VRefreshLayout</a></p>
+<p>TransitionHelper-两步实现类似格瓦拉的转场动画<br><a href="https://github.com/ImmortalZ/TransitionHelper" target="_blank" rel="external">https://github.com/ImmortalZ/TransitionHelper</a></p>
+<p>DialogFragment-自定义对话框应该这样写<br><a href="https://github.com/GitPhoenix/DialogFragment" target="_blank" rel="external">https://github.com/GitPhoenix/DialogFragment</a></p>
+<p>RefreshLayout-RefreshLayout让你半小时以内完成一个列表界面<br><a href="https://github.com/gengqiquan/RefreshLayout" target="_blank" rel="external">https://github.com/gengqiquan/RefreshLayout</a></p>
+<p>SwipeCardRecyclerView-如何利用RecyclerView打造炫酷滑动卡片<br><a href="https://github.com/HalfStackDeveloper/SwipeCardRecyclerView" target="_blank" rel="external">https://github.com/HalfStackDeveloper/SwipeCardRecyclerView</a></p>
+<p>LookLook-一个小时打造新闻app<br><a href="https://github.com/xinghongfei/LookLook" target="_blank" rel="external">https://github.com/xinghongfei/LookLook</a></p>
+<p>JPTabBar-一款强大的Android底部导航<br><a href="https://github.com/peng8350/JPTabBar" target="_blank" rel="external">https://github.com/peng8350/JPTabBar</a></p>
+<p>ByeBurger-炫酷：一句代码实现标题栏、导航栏滑动隐藏，ByeBurger库的使用和实现<br><a href="https://github.com/githubwing/ByeBurger" target="_blank" rel="external">https://github.com/githubwing/ByeBurger</a></p>
+<p>CommonRecycler-通用 RecylerAdapter，内置 XRecyclerView，兼容上下拉与动画，高复用，一个 Adapter 通用所有页面，支持空页面，懒人专属<br><a href="https://github.com/CarGuo/CommonRecycler" target="_blank" rel="external">https://github.com/CarGuo/CommonRecycler</a></p>
+<p>FreeBook-先定一个小目标!比如说先用MVP和快速开发框架打造一个免费下载小说的app老司机来手把手教你半天搞定<br><a href="https://github.com/80945540/FreeBook" target="_blank" rel="external">https://github.com/80945540/FreeBook</a></p>
+<p>IjkPlayerView-基于ijkplayer的视频播放器，仿Bilibili客户端，集成沉浸式全屏、弹幕、触屏控制、视频源切换等功能<br><a href="https://github.com/Rukey7/IjkPlayerView" target="_blank" rel="external">https://github.com/Rukey7/IjkPlayerView</a></p>
+<p>CoolImageView-非常酷的图片组件，类似腾讯 QQ 可以让 imageview 的图片背景上下移动，或左右移动<br><a href="https://github.com/HuTianQi/CoolImageView" target="_blank" rel="external">https://github.com/HuTianQi/CoolImageView</a></p>
+<p>AWelcomeVideoPager-ndroid酷炫欢迎页播放视频,仿蚂蜂窝自由行和慕课网<br><a href="https://github.com/linglongxin24/WelcomeVideoPager" target="_blank" rel="external">https://github.com/linglongxin24/WelcomeVideoPager</a></p>
+<p>validateui-一个表单验证的lib<br><a href="https://github.com/LongMaoC/validateui" target="_blank" rel="external">https://github.com/LongMaoC/validateui</a></p>
+<p>CollapseView-Android仿安居客房源详情页图片显示<br><a href="https://github.com/xiaoqiAndroid/CollapseView/tree/master" target="_blank" rel="external">https://github.com/xiaoqiAndroid/CollapseView/tree/master</a></p>
+<p>HintPopupWindow-比QQ更炫酷的’选项弹窗’动画<br><a href="https://github.com/Zhaoss/HintPopupWindow" target="_blank" rel="external">https://github.com/Zhaoss/HintPopupWindow</a></p>
+<p>RecyclerViewDemo2- 精通RecyclerView：打造ListView、GridView、瀑布流；学会添加分割线、 添加删除动画 、Item点击事件<br><a href="https://github.com/linglongxin24/RecyclerViewDemo2" target="_blank" rel="external">https://github.com/linglongxin24/RecyclerViewDemo2</a></p>
+<p>TinderStackView-Android高仿「陌陌」的点点效果<br><a href="https://github.com/Mersens/TinderStackView" target="_blank" rel="external">https://github.com/Mersens/TinderStackView</a></p>
+<p>MvpDemo-优雅的构建Android项目之 MVP开发模式<br><a href="https://github.com/PandaQAQ/MvpDemo" target="_blank" rel="external">https://github.com/PandaQAQ/MvpDemo</a></p>
+<p>Material Animations -演示View的平移、缩放动画，activity进入和退出动画，界面间元素共享，并且开发者在README中，对动画原理进行了精讲，是学习动画很好的项目，项目代码量比较少，也很适合新手学习。<br><a href="https://github.com/lgvalle/Material-Animations" target="_blank" rel="external">https://github.com/lgvalle/Material-Animations</a></p>
+<p>Meizhi-每天推送一张妹子图、一个小视频和一系列程序员精选文章，数据来源于代码家的干货集中营。唯一不足就是视频解析还有bug，声音视频无法同步，希望能尽快修复。<br><a href="https://github.com/drakeet/Meizhi" target="_blank" rel="external">https://github.com/drakeet/Meizhi</a></p>
+<p>android-UniversalMusicPlayer-这个开源项目展示了如何实现一个横跨各种Android平台的音乐播放器，包括手机，平板，汽车，手表，电视等。Google官方推出，跨平台开发必看项目。<br><a href="https://github.com/googlesamples/android-UniversalMusicPlayer" target="_blank" rel="external">https://github.com/googlesamples/android-UniversalMusicPlayer</a></p>
+<p>plaid-由谷歌工程师开发，展示Google Material风格设计，项目代码量大，但是结构清晰，还是很好理解的。<br><a href="https://github.com/nickbutcher/plaid" target="_blank" rel="external">https://github.com/nickbutcher/plaid</a></p>
+<p>CalendarView-Android 滚轮日期选择自定义View<br><a href="https://github.com/chenpengfei88/CalendarView" target="_blank" rel="external">https://github.com/chenpengfei88/CalendarView</a></p>
+<p>AndroidMVPSample-一套完整的Android通用框架<br><a href="https://github.com/WuXiaolong/AndroidMVPSample" target="_blank" rel="external">https://github.com/WuXiaolong/AndroidMVPSample</a></p>
+<p>CoordinatorLayoutTest-高仿支付宝9.9.2版本生活模块界面来讲解CoordinatorLayout，AppBarLayout，CollapsingToolbarLayout<br><a href="https://github.com/jack921/CoordinatorLayoutTest" target="_blank" rel="external">https://github.com/jack921/CoordinatorLayoutTest</a></p>
+<p>SideSlip_PullToRefresh-Android 集成了RecyclerView 刷新加载，及侧滑菜单的 PullToRefresh<br><a href="https://github.com/lvfaqiang/SideSlip_PullToRefresh" target="_blank" rel="external">https://github.com/lvfaqiang/SideSlip_PullToRefresh</a></p>
+<p>SideSlip_PullToRefresh-通用Android标题栏控件<br><a href="https://github.com/xiaohaibin/CustomTitileBar" target="_blank" rel="external">https://github.com/xiaohaibin/CustomTitileBar</a></p>
+<p>CalendarView-Android 自定义价格日历控件<br><a href="https://github.com/yissan/CalendarView" target="_blank" rel="external">https://github.com/yissan/CalendarView</a></p>
+<p>ZhiHuDaily-纸飞机-采用MVP架构，集合了知乎日报、果壳精选和豆瓣一刻的综合性阅读客户端<br><a href="https://github.com/marktony/ZhiHuDaily" target="_blank" rel="external">https://github.com/marktony/ZhiHuDaily</a></p>
+<p>ZhiHuDaily-仅2步实现 拜拜 汉堡导航栏效果~ 全新底部导航交互(滑动隐藏)<br><a href="https://github.com/githubwing/ByeBurger" target="_blank" rel="external">https://github.com/githubwing/ByeBurger</a></p>
+<p>FloatBubbleView-Android：会呼吸的悬浮气泡<br><a href="https://github.com/IamXiaRui/Android_5.0_ViewDemo/tree/master/FloatBubbleView" target="_blank" rel="external">https://github.com/IamXiaRui/Android_5.0_ViewDemo/tree/master/FloatBubbleView</a></p>
+<p>ByeBurger-极其简便的快速实现滑动隐藏标题栏和导航栏<br><a href="https://github.com/githubwing/ByeBurger" target="_blank" rel="external">https://github.com/githubwing/ByeBurger</a></p>
+<p>NotificationUtil-全新的Android通知栏,已抛弃setLatestEventInfo,兼容高版本<br><a href="https://github.com/linglongxin24/NotificationUtil" target="_blank" rel="external">https://github.com/linglongxin24/NotificationUtil</a></p>
+<p>LauncherView-十分钟搞定酷炫动画，Android自定义 View 入门<br><a href="https://github.com/diamondlin2016/LauncherView" target="_blank" rel="external">https://github.com/diamondlin2016/LauncherView</a></p>
+<p>LiveShow-使用MVP+RxJava制作的笑话APP<br><a href="https://github.com/GaoGersy/LiveShow" target="_blank" rel="external">https://github.com/GaoGersy/LiveShow</a></p>
+<p>ChargeProgress-android 自定义view+属性动画实现充电进度条功能<br><a href="https://github.com/crazyandcoder/ChargeProgress" target="_blank" rel="external">https://github.com/crazyandcoder/ChargeProgress</a></p>
+<p>Notes-炫酷的ViewPager动画效果<br><a href="https://github.com/Elder-Wu/Notes" target="_blank" rel="external">https://github.com/Elder-Wu/Notes</a></p>
+<p>ElasticLayout-超轻量！安卓实现多item抽屉效果动画<br><a href="https://github.com/AndroidMsky/ElasticLayout" target="_blank" rel="external">https://github.com/AndroidMsky/ElasticLayout</a></p>
+<p>SuperTextView-SuperTextView 一款强大的android TextView<br><a href="https://github.com/lygttpod/SuperTextView" target="_blank" rel="external">https://github.com/lygttpod/SuperTextView</a></p>
+<p>SuperTextView-自定义LayoutManager实现一个展示文章的View，支持拖动插入以及相应的动画展示<br><a href="https://github.com/rantianhua/AssembleEssay" target="_blank" rel="external">https://github.com/rantianhua/AssembleEssay</a></p>
+<p>VideoRecord-Android 拍摄（横 \ 竖屏）视频的懒人之路<br><a href="https://github.com/CarGuo/VideoRecord" target="_blank" rel="external">https://github.com/CarGuo/VideoRecord</a></p>
+<p>Telegram-著名IM应用Telegram源码<br><a href="https://github.com/DrKLO/Telegram" target="_blank" rel="external">https://github.com/DrKLO/Telegram</a></p>
+<p>Notes-自定义View系列：未读消息数角标<br><a href="https://github.com/Elder-Wu/Notes" target="_blank" rel="external">https://github.com/Elder-Wu/Notes</a></p>
+<p>BeautifulWords-Android开源实战：使用MVP+Retrofit开发一款文字阅读APP<br><a href="https://github.com/zuiwuyuan/BeautifulWords" target="_blank" rel="external">https://github.com/zuiwuyuan/BeautifulWords</a></p>
+<p>Notes-自定义ViewPager——左右无限循环，带指示器<br><a href="https://github.com/Elder-Wu/Notes" target="_blank" rel="external">https://github.com/Elder-Wu/Notes</a></p>
+<p>Myprogress-安卓Android多阶段进度条progress bar附带动画效果<br><a href="https://github.com/AndroidMsky/Myprogress" target="_blank" rel="external">https://github.com/AndroidMsky/Myprogress</a></p>
+<p>SpannableStringBiulderTest-直接拿去用！几种常见Dialog，懒人必收<br><a href="https://github.com/weavey/NormalSelectDialog" target="_blank" rel="external">https://github.com/weavey/NormalSelectDialog</a></p>
+<p>SpannableStringBiulderTest-【Android】强大的SpannableStringBuilder<br><a href="https://github.com/Gavin-ZYX/SpannableStringBiulderTest" target="_blank" rel="external">https://github.com/Gavin-ZYX/SpannableStringBiulderTest</a></p>
+<p>Ghost-微影，一款纯粹的在线视频App，基于Material Design + MVP + RxJava + Retrofit + Realm + Glide<br><a href="https://github.com/GeekGhost/Ghost" target="_blank" rel="external">https://github.com/GeekGhost/Ghost</a></p>
+<p>SwipeRecyclerView-自定义下拉刷新上拉加载控件（SwipeRefreshLayout + recyclerView）<br><a href="https://github.com/niniloveyou/SwipeRecyclerView" target="_blank" rel="external">https://github.com/niniloveyou/SwipeRecyclerView</a></p>
+<p>ViewDragHelperDemo-Android自定义ViewGroup神器-ViewDragHelper<br><a href="https://github.com/hiphonezhu/Android-Demos/tree/master/ViewDragHelperDemo" target="_blank" rel="external">https://github.com/hiphonezhu/Android-Demos/tree/master/ViewDragHelperDemo</a></p>
+<p>UserDefinedProgressBar-好玩的动画加载和自定义ProgressBar<br><a href="https://github.com/junmei520/UserDefinedProgressBar" target="_blank" rel="external">https://github.com/junmei520/UserDefinedProgressBar</a></p>
+<p>MPermissionUtils-Android6.0 运行时权限 超轻量级工具类<br><a href="https://github.com/Airsaid/MPermissionUtils" target="_blank" rel="external">https://github.com/Airsaid/MPermissionUtils</a></p>
+<p>EmptyLayout-Android通用的EmptyLayout-展示不用状态的界面<br><a href="https://github.com/yewei02538/EmptyLayout" target="_blank" rel="external">https://github.com/yewei02538/EmptyLayout</a></p>
+<p>NestFullListView-【Android】ListView、RecyclerView、ScrollView里嵌套ListView 相对优雅的解决方案:NestFullListView<br><a href="https://github.com/mcxtzhang/NestFullListView" target="_blank" rel="external">https://github.com/mcxtzhang/NestFullListView</a></p>
+<p>WindowMenuDemo-Android仿Qzone底部导航栏加号弹出菜单<br><a href="https://github.com/MjCodeTinker/WindowMenuDemo" target="_blank" rel="external">https://github.com/MjCodeTinker/WindowMenuDemo</a></p>
+<p>SmileRefresh-微笑下拉刷新。这是在 SwipeRefreshLayout基础上修改的下拉刷新库。<br><a href="https://github.com/songixan/SmileRefresh" target="_blank" rel="external">https://github.com/songixan/SmileRefresh</a></p>
+<p>MyCartDemo-Android自定义View–自己撸一个柱状图也没那么难<br><a href="https://github.com/Hankkin/MyCartDemo" target="_blank" rel="external">https://github.com/Hankkin/MyCartDemo</a></p>
+<p>MDStudySamples-Android TabLayout 分分钟打造一个滑动标签页<br><a href="https://github.com/Mike-bel/MDStudySamples" target="_blank" rel="external">https://github.com/Mike-bel/MDStudySamples</a></p>
+<p>WingUE-基本特效：饿了么丝滑无缝过度搜索栏的实现<br><a href="https://github.com/githubwing/WingUE" target="_blank" rel="external">https://github.com/githubwing/WingUE</a></p>
+<p>史上最牛逼的音乐播放器—仿网易云音乐（已开源）<br><a href="https://github.com/aa112901/remusic" target="_blank" rel="external">https://github.com/aa112901/remusic</a></p>
+<p>GABottleLoading-贝塞尔风暴 － 超炫GABottleLoading效果<br><a href="https://github.com/Ajian-studio/GABottleLoading" target="_blank" rel="external">https://github.com/Ajian-studio/GABottleLoading</a></p>
+<p>PathAnimView-【注释张豪华版 Path酷炫动画】极速get花式Path （支付宝支付成功动画）<br><a href="https://github.com/mcxtzhang/PathAnimView" target="_blank" rel="external">https://github.com/mcxtzhang/PathAnimView</a></p>
+<p>Material Design : 带动画的标题栏<br><a href="https://github.com/shiguiyou/MaterialDemo/tree/master" target="_blank" rel="external">https://github.com/shiguiyou/MaterialDemo/tree/master</a></p>
+<p>MultiTypeAdapter-优雅的实现多类型列表的Adapter<br><a href="https://github.com/LiHongHui6/MultiTypeAdapter" target="_blank" rel="external">https://github.com/LiHongHui6/MultiTypeAdapter</a></p>
+<p>AnimationPlayer-探索View动画和属性动画<br><a href="https://github.com/SpikeKing/AnimationPlayer" target="_blank" rel="external">https://github.com/SpikeKing/AnimationPlayer</a></p>
+<p>AnimShopButton-仿饿了么加入购物车旋转控件 - 自带闪转腾挪动画 的按钮<br><a href="https://github.com/mcxtzhang/AnimShopButton" target="_blank" rel="external">https://github.com/mcxtzhang/AnimShopButton</a></p>
+<p>YinyuetaiPlayer-高仿音悦台播放页面交互效果<br><a href="https://github.com/oubowu/YinyuetaiPlayer" target="_blank" rel="external">https://github.com/oubowu/YinyuetaiPlayer</a></p>
+<p>AndroidAnimationExercise-Android 动画实战 - 仿微博雷达功能<br><a href="https://github.com/REBOOTERS/AndroidAnimationExercise" target="_blank" rel="external">https://github.com/REBOOTERS/AndroidAnimationExercise</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/uploads/avatar.jpg" alt="Jan9th WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/uploads/avatar.jpg" alt="Jan9th Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Jan9th
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://Jan9th.github.io/2017/05/10/140款Android开源优秀项目源码-菜鸟窝/" title="140款Android开源优秀项目源码-菜鸟窝">https://Jan9th.github.io/2017/05/10/140款Android开源优秀项目源码-菜鸟窝/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/25/常用链接/" rel="prev" title="常用工具">
+                常用工具 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.jpg"
+               alt="Jan9th" />
+          <p class="site-author-name" itemprop="name">Jan9th</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Jan9th/Jan9th.github.io" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://stormzhang.com/" target="_blank" title="stormzhang">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  stormzhang
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weaponzhi.online/" target="_blank" title="WeaponZhi">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  WeaponZhi
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.ssevening.com/" target="_blank" title="潘辰星">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  潘辰星
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://zhoubianjing.github.io/" target="_blank" title="Leslie_zhou">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Leslie_zhou
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://localhost:4000/" target="_blank" title="4k 调试">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  4k 调试
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://github.com/" title="GitHub" target="_blank">GitHub</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://stackoverflow.com/" title="Stack Overflow" target="_blank">Stack Overflow</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.google.com/ncr" title="Google" target="_blank">Google</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://developer.android.com/index.html" title="Developer" target="_blank">Developer</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.jikedaohang.com/" title="极客导航" target="_blank">极客导航</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://juejin.im/" title="掘金" target="_blank">掘金</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.jianshu.com/" title="简书" target="_blank">简书</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jan9th</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 访问人数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      $('#local-search-input').focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            var resultItems = [];
+            if (this.value.trim().length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCountInArticle = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCountInArticle = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  var resultItem = '';
+
+                  function highlightKeyword(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+
+                    var matchText = text.substring(start, end);
+                    var matchResult = [];
+                    var prevEnd = 0;
+                    while (position + word.length <= end && index.length != 0) {
+
+                      // highlight keyword
+
+                      var wordBegin = position - start;
+                      var wordEnd = position - start + word.length;
+                      matchResult.push(matchText.substring(prevEnd, wordBegin));
+                      matchResult.push("<b class=\"search-keyword\">" + matchText.substring(wordBegin, wordEnd) + "</b>");
+
+                      // move to next position of hit
+
+                      index.pop();
+                      prevEnd = wordEnd;
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (prevEnd > position - start) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    matchResult.push(matchText.substring(prevEnd));
+                    return matchResult.join('');
+                  }
+
+                  // sort index by position of keyword
+
+                  indexOfTitle.sort(function (itemLeft, itemRight) {
+                    return itemRight.position - itemLeft.position;
+                  });
+
+                  indexOfContent.sort(function (itemLeft, itemRight) {
+                    return itemRight.position - itemLeft.position;
+                  });
+
+                  // highlight title
+
+                  if (indexOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, 0, title.length, indexOfTitle) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  // highlight content
+
+                  var resultUpperBound = parseInt(1);
+                  var withoutUpperBound = false;
+                  if (resultUpperBound === -1) {
+                    withoutUpperBound = true;
+                  }
+                  var currentResultNum = 0;
+                  while (indexOfContent.length != 0 && (withoutUpperBound || (currentResultNum < resultUpperBound))) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                    "<p class=\"search-result\">" + highlightKeyword(content, start, end, indexOfContent) +
+                    "...</p>" + "</a>";
+                    currentResultNum++;
+                  }
+                  resultItem += "</li>";
+                  resultItems.push({item: resultItem, hitCount: hitCountInArticle, id: resultItems.length});
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              $resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              $resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.hitCount != resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultLeft.id - resultRight.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result, i) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              $resultContent.innerHTML = searchResultList;
+            }
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("EtkwsOqksObvIinIBg8lewmg-gzGzoHsz", "Nca9wqT0V3w0j8m30j7Aw576");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
