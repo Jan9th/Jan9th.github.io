@@ -92,12 +92,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jan9th">
-<meta property="og:url" content="https://Jan9th.github.io/archives/index.html">
+<meta name="description" content="初步整理 5.0 新特性 参考 tianzhu2725">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android 5.0 新特性">
+<meta property="og:url" content="https://Jan9th.github.io/2017/05/14/Android-5-0-新特性/index.html">
 <meta property="og:site_name" content="Jan9th">
+<meta property="og:description" content="初步整理 5.0 新特性 参考 tianzhu2725">
+<meta property="og:updated_time" content="2017-05-14T12:49:38.117Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jan9th">
+<meta name="twitter:title" content="Android 5.0 新特性">
+<meta name="twitter:description" content="初步整理 5.0 新特性 参考 tianzhu2725">
 
 
 
@@ -125,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="https://Jan9th.github.io/archives/"/>
+  <link rel="canonical" href="https://Jan9th.github.io/2017/05/14/Android-5-0-新特性/"/>
 
 
 
 
 
-  <title>归档 | Jan9th</title>
+  <title>Android 5.0 新特性 | Jan9th</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -175,7 +180,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -303,403 +308,399 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 13 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://Jan9th.github.io/2017/05/14/Android-5-0-新特性/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jan9th">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jan9th">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                Android 5.0 新特性
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-14T17:31:35+08:00">
+                2017-05-14
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-05-14T20:49:38+08:00">
+                2017-05-14
+              </time>
+            
+          </span>
+
+          
+
+          
+
+          
+          
+             <span id="/2017/05/14/Android-5-0-新特性/" class="leancloud_visitors" data-flag-title="Android 5.0 新特性">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span title="字数统计">
+                  1,962
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                <span title="阅读时长">
+                  8
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
+      
+        <blockquote>
+<p>初步整理 5.0 新特性 <a href="http://blog.csdn.net/tianzhu2725/article/details/52775285" target="_blank" rel="external">参考 tianzhu2725</a></p>
+</blockquote>
+<a id="more"></a>
+<h2 id="Material-Design"><a href="#Material-Design" class="headerlink" title="Material Design"></a>Material Design</h2><p>概念：融合卡片式，立体式的设计风格，强调层次感，动画，阴影等元素。</p>
+<p><a href="http://developer.android.com/training/material" target="_blank" rel="external">官网介绍</a></p>
+<h2 id="ToolBar"><a href="#ToolBar" class="headerlink" title="ToolBar"></a>ToolBar</h2><p>它用来代替 ActionBar，但是比 ActionBar 更加灵活，相当于可以写在布局文件中的 ActionBar；与 DrawerLayout 使用的时候，DrawerLayout 可以覆盖在 ToolBar 上，并且 ToolBar 和ActionBar 不能同时使用</p>
+<p>使用 ToolBar 的步骤：</p>
+<p>先隐藏 ActionBar，可以继承一个不带 ActionBar 的 Theme，如:</p>
+<pre><code>style name=&quot;AppTheme&quot; parent=&quot;Theme.AppCompat.Light.NoActionBar&quot;
+</code></pre><p>然后在 Activity 中设置 ToolBar 替代 ActionBar：</p>
+<pre><code>setSupportActionBar(toolBar);
+</code></pre><p>最后设置 ToolBar 的显示内容：</p>
+<pre><code>toolBar.setTitle(&quot;ToolBar&quot;);//设置标题
+toolBar.setNavigationIcon(iconRes);//设置图标
+toolBar.setOnMenuItemClickListener();//设置 Menu Item 点击
+</code></pre><h2 id="动态替换Theme"><a href="#动态替换Theme" class="headerlink" title="动态替换Theme"></a>动态替换Theme</h2><p><a href="http://www.materialpalette.com" target="_blank" rel="external">MaterialTheme 配色方案</a></p>
+<p>让 Activity 使用自定义的 Theme，修改状态栏，ActionBar，界面背景，NavigationBar的颜色。</p>
+<pre><code>&lt;style name=&quot;AppTheme&quot; parent=&quot;@android:style/Theme.Material&quot;&gt;
+    &lt;!--状态栏颜色--&gt;
+    &lt;item name=&quot;android:colorPrimaryDark&quot;&gt;#f00&lt;/item&gt;
+    &lt;!--ActionBar 颜色--&gt;
+    &lt;item name=&quot;android:colorPrimary&quot;&gt;#ff0&lt;/item&gt;
+    &lt;!--界面背景颜色--&gt;
+    &lt;item name=&quot;android:windowBackground&quot;&gt;@color/colorWindowBackground&lt;/item&gt;
+    &lt;!--导航栏颜色--&gt;
+    &lt;item name=&quot;android:navigationBarColor&quot;&gt;#00f&lt;/item&gt;
+&lt;/style&gt;
+</code></pre><p>动态替换 Theme 的步骤：</p>
+<p>定义至少 2 套 theme<br>调用 setTheme 方法设置当前的 theme，但是该方法要在 setContentView 之前，如:</p>
+<pre><code>setTheme(mTheme);
+setContentView(R.layout.activity_main);
+</code></pre><p>设置了 Theme，需要 finish 当前 Activity，然后重启当前 Activity，让 Theme 生效</p>
+<pre><code>Intent intent = getActivity().getIntent();
+getActivity().finish();//结束当前的Activity
+getActivity().overridePendingTransition(0,0);//不要动画
+startActivity(intent);
+</code></pre><h2 id="RecyclerView"><a href="#RecyclerView" class="headerlink" title="RecyclerView"></a>RecyclerView</h2><p><a href="https://developer.android.com/intl/zh-tw/training/material/lists-cards.html" target="_blank" rel="external">官网</a></p>
+<p>先添加依赖</p>
+<pre><code>compile &apos;com.android.support:recyclerview-v7:23.1.1&apos;
+</code></pre><p>设置 LayoutManager：控制 RecyclerView 如何显示布局,系统提供 3 个布局管理器：</p>
+<p>LinearLayoutManager：线性布局，有横向和竖直方向显示<br>GridLayoutManager：网格布局，有横向和竖直方向显示<br>StaggeredGridLayoutManager： 瀑布流布局，有横向和竖直方向显示</p>
+<p>然后给 RecyclerView 设置 Adapter<recyclerview.viewholder></recyclerview.viewholder></p>
+<p>设置点击事件，由于 RecyclerView 没有 setOnItemClickListener，只能在 Adapter 中给 View 设置 Click 事件</p>
+<h2 id="水波纹动画，自定义水波纹动画以及状态选择器动画"><a href="#水波纹动画，自定义水波纹动画以及状态选择器动画" class="headerlink" title="水波纹动画，自定义水波纹动画以及状态选择器动画"></a>水波纹动画，自定义水波纹动画以及状态选择器动画</h2><p>首先，在Android 5.0 以上，点击效果默认自带水波纹效果，并且有 2 种选择：</p>
+<pre><code>//矩形边框水波纹
+android:background=&quot;?android:attr/selectableItemBackground&quot;
+//无边框限制水波纹
+android:background=&quot;?android:attr/selectableItemBackgroundBorderless&quot;
+</code></pre><p>自定义水波纹动画</p>
+<p>使用 ViewAnimationUtils 创建圆形水波纹动画，注意该动画不能在 Activity 的 onCreate 方法中执行：</p>
+<pre><code>Animator circularReveal = ViewAnimationUtils.createCircularReveal(text, 0, text.getHeight() , 1f, text.getWidth()*2);
+circularReveal.setDuration(1000);
+circularReveal.start();
+</code></pre><p>使用 ripple 标签或者 RippleDrawable 可以更改控件水波纹动画颜色：</p>
+<pre><code>&lt;ripple xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; android:color=&quot;#00ff00&quot;&gt;
+&lt;item android:id=&quot;@android:id/mask&quot; &gt;
+&lt;color android:color=&quot;#0000ff&quot; /&gt;
+</code></pre><p>定义带有属性动画的状态选择器</p>
+<p>通过 stateListAnimator 属性指定状态选择器的动画：</p>
+<pre><code>android:stateListAnimator=&quot;@drawable/selector_anim&quot;
+</code></pre><p>状态选择器文件中需要加入 objectAnimator 标签：</p>
+<pre><code>&lt;selector  xmlns:android = &quot;http://schemas.android.com/apk/res/android&quot; &gt;
+&lt;item  android:statepressed = &quot;true&quot; &gt;
+&lt;objectAnimator  android:propertyName = &quot;scaleX&quot;
+        android:duration = &quot;@android:integer/configshortAnimTime&quot;
+        android:valueTo = &quot;0.2&quot;
+        android:valueFrom = &quot;1&quot;
+        android:valueType = &quot;floatType&quot; &gt;
+    //...
+</code></pre><p>同样，状态选择器动画可以用代码方式加载</p>
+<pre><code>//加载动画
+AnimatorInflater.loadStateListAnimator();
+//设置动画
+View.setStateListAnimator();
+</code></pre><p>定义带有帧动画的状态选择器，需要设置给 background 属性，不是 stateListAnimator，如下所示:</p>
+<pre><code>&lt;animated-selector  xmlns:android = &quot;http://schemas.android.com/apk/res/android&quot; &gt; 
+&lt;item  android:id = &quot;@+id/pressed&quot;  android:drawable = &quot;@drawable/drawableP&quot; 
+    android:state_pressed = &quot;true&quot; /&gt; 
+&lt;item  android:id = &quot;@id/default&quot; 
+    android:drawable = &quot;@drawable/drawableD&quot; /&gt; 
+
+&lt;!-- 指定帧动画 - -&gt; 
+&lt;transition  android:fromId = &quot;@+id/default&quot;  android:toId = &quot;@+id/pressed&quot; &gt; 
+    &lt;animation-list&gt; 
+        &lt;item  android:duration = &quot;15&quot;  android:drawable = &quot;@drawable/dt1 &quot;/&gt; 
+        &lt;item  android:duration = &quot;15&quot;  android:drawable = &quot;@drawable/dt2&quot;/&gt; 
+        ... 
+    &lt;/animation-list&gt; 
+ &lt;/animated-selector&gt;
+</code></pre><h2 id="CardView"><a href="#CardView" class="headerlink" title="CardView"></a>CardView</h2><p>CardLayout 拥有高度和阴影，以及轮廓裁剪，圆角等功能</p>
+<p>各属性说明:</p>
+<p>1.设置圆角：card_view:cardCornerRadius=”10dp”<br>2.设置高度：card_view:cardElevation=”10dp”<br>3.设置内边距：card_view:contentPadding=”10dp”<br>4.设置背景色：card_view:cardBackgroundColor=”?android:attr/colorPrimary”</p>
+<h2 id="View-的高度与阴影"><a href="#View-的高度与阴影" class="headerlink" title="View 的高度与阴影"></a>View 的高度与阴影</h2><p><a href="https://developer.android.com/intl/zh-tw/training/material/shadows-clipping.html" target="_blank" rel="external">官网介绍</a></p>
+<p>View 新增属性 z 轴，用来体现 Material Design 中的层次，影响因素 2 个：elevation 和 translationZ</p>
+<p>View 高度 = elevation + translationZ</p>
+<p>elevation 表示 view 的高度，高度越大，阴影越大，可以在 xml 中直接使用属性， 也可以在代码中使用</p>
+<pre><code>view.setEvelvation();
+android:elevation=&quot;10dp&quot;
+</code></pre><p>transtionZ 属性表示 view 在 Z 方向移动的距离，一般用于属性动画中</p>
+<pre><code>android:translationZ=&quot;10dp&quot;
+</code></pre><p>高度影响 View 的绘制顺序，过去是按 View 添加顺序绘制，先添加的先绘制，现在高度小的先绘制，因为高度小的，层级低，在下面， 高度相同的，按添加顺序绘制</p>
+<p>注意：</p>
+<p>如果 View 的背景色为透明，则不会显示出阴影效果</p>
+<p>只有子 View 的大小比父 View 小时，阴影才能显示出来</p>
+<h2 id="View-的轮廓与裁剪"><a href="#View-的轮廓与裁剪" class="headerlink" title="View 的轮廓与裁剪"></a>View 的轮廓与裁剪</h2><p>(在Android 5.1 以及以上才有效果)</p>
+<p><a href="https://developer.android.com/intl/zh-tw/training/material/shadows-clipping.html" target="_blank" rel="external">官网介绍</a></p>
+<p>View 增加了轮廓概念,轮廓用来表示怎么显示阴影,也就是说轮廓什么形状，阴影就显示什么形状。</p>
+<p>View 的轮廓可以通过 outlineProvider 属性设置，默认是依据于 background 的，还有其他 3 个取值：bounds,none,paddingBounds</p>
+<pre><code>android:outlineProvider=&quot;bounds&quot;
+</code></pre><p>none：即使设置了 evaluation 也不显示阴影<br>background：按背景来显示轮廓，如果 background 是颜色值，则轮廓就是 view 的大小，如果是shape，则按 shape 指定的形状作为轮廓<br>bounds: View 的矩形大小作轮廓<br>paddedBounds: View 的矩形大小减去 padding 的值后的大小作轮廓。</p>
+<p>可以通过 setOutlineProvider() 方法自定义轮廓:</p>
+<pre><code>tv_blue.setOutlineProvider(new ViewOutlineProvider() {
+        @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+        @Override
+        public void getOutline(View view, Outline outline) {
+            outline.setOval(0,0,
+                    view.getWidth(),view.getHeight());
+        }
+    });
+</code></pre><p>注意：如果 background 是图片，那只能通过代码 setOutlineProvider() 来指定轮廓<br>View 的裁剪是指将 View 按照轮廓裁剪，能改变 View 的形状，如圆形头像：</p>
+<p>先设置轮廓:<br>再设置根据轮廓裁剪 View,目前只支持对矩形，圆形，圆角矩形的裁剪:<br>    //设置对View进行裁剪<br>    tv_clip.setClipToOutline(true);</p>
+<h2 id="Palette"><a href="#Palette" class="headerlink" title="Palette"></a>Palette</h2><p>使用 Palette 可以让我们从一张图片中拾取颜色，将拾取到的颜色赋予 ActionBar，StatusBar 以及背景色可以让界面色调实现统一<br>使用 Palette 需要添加以下依赖：</p>
+<pre><code>compile &apos;com.android.support:palette-v7:23.0.0+&apos;
+</code></pre><p>Palette 提供的 API</p>
+<p>传入 Bitmap 即可获取 Palette 对象,以下是同步和异步使用方式:</p>
+<pre><code>//同步获取，需要在子线程中使用
+Palette palette = Palette.from(drawable.getBitmap()).generate();
+//异步获取，可以在主线程中使用
+Palette.from(drawable.getBitmap()).generate(new Palette.PaletteAsyncListener() {
+    @Override
+    public void onGenerated(Palette palette) {
+        //...
+    }
+});
+</code></pre><p>得到Palette对象后，获取其中的颜色，颜色对应如下：</p>
+<p>vibrant      -  有活力的颜色<br>lightVibrant -  有活力的亮色<br>darkVibrant  -  有活力的暗色<br>muted        -  柔和暗淡的颜色<br>lightMuted   -  柔和的亮色<br>darkMuted    -  柔和的暗色</p>
+<p>获取指定颜色的采样对象，获取采样得到的颜色:</p>
+<pre><code>//我们可以直接使用 palette 获取指定颜色：
+palette.getLightMutedColor(defaultColor);
+
+//一般也可以先获取采样对象 Swatch,从 Swatch 中获取我们需要的颜色:
+//获取有活力颜色的采样对象
+Palette.Swatch vibrantSwatch = palette.getVibrantSwatch();
+</code></pre><p>采样对象Swatch提供了以下方法来获取颜色：</p>
+<pre><code>//swatch.getPopulation(): the amount of pixels which this swatch represents.
+//swatch.getRgb(): the RGB value of this color.
+//swatch.getHsl(): the HSL value of this color，即色相，饱和度，明度.
+//swatch.getBodyTextColor(): the RGB value of a text color which can be displayed on top of this color.
+//swatch.getTitleTextColor(): the RGB value of a text color which can be displayed on top of this color
+
+//一般会将getRgb设置给控件背景色，getBodyTextColor()设置给文字颜色
+textView.setBackgroundColor(vibrantSwatch.getRgb());
+textView.setTextColor(vibrantSwatch.getBodyTextColor());
+</code></pre><h2 id="Android-5-0-新特性的向下兼容"><a href="#Android-5-0-新特性的向下兼容" class="headerlink" title="Android 5.0 新特性的向下兼容"></a>Android 5.0 新特性的向下兼容</h2><p>可以通过Support Library使用的新特性可以向下兼容，如：</p>
+<pre><code>RecyclerView (recyclerview-v7)
+CardView (cardview-v7)
+Palette 颜色识别 (palette-v7)
+ToolBar (appcompat-v7)
+SwipeRefreshLayout (v4)
+</code></pre><p>定义针对版本的资源目录</p>
+<pre><code>layout：使用新API的布局放在res/layout-v21中，其他的放res/layout
+drawable：使用新属性的drawable文件放到 res/drawable-v21，其他的放 res/drawable
+values: 新的主题放到 res/values-v21, 其他的放 res/values
+</code></pre><p>在代码中对系统 Version 做判断，使用对应的效果，如:</p>
+<pre><code>if(Build.VERSION.SDK_INT&gt; 21){
+    //使用新动画
+    ...
+}
+</code></pre>
+      
+    </div>
+
+    <div>
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/uploads/avatar.jpg" alt="Jan9th WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
       
       
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/uploads/avatar.jpg" alt="Jan9th Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
 
       
+    </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+    <div>
+      
         
-            <a class="post-title-link" href="/2017/05/14/他山之石/" itemprop="url">
-              
-                <span itemprop="name">他山之石</span>
-              
-            </a>
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Jan9th
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://Jan9th.github.io/2017/05/14/Android-5-0-新特性/" title="Android 5.0 新特性">https://Jan9th.github.io/2017/05/14/Android-5-0-新特性/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
         
-      </h2>
+      
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-14T19:51:30+08:00"
-              content="2017-05-14" >
-          05-14
-        </time>
-      </div>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/14/Android-6-0-新特性/" rel="next" title="Android 6.0 新特性">
+                <i class="fa fa-chevron-left"></i> Android 6.0 新特性
+              </a>
+            
+          </div>
 
-    </header>
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/11/博客建设中的一些体会和记录/" rel="prev" title="博客网站建设中的一些体会和记录">
+                博客网站建设中的一些体会和记录 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
+    <div class="post-spread">
       
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/14/Android-6-0-新特性/" itemprop="url">
-              
-                <span itemprop="name">Android 6.0 新特性</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-14T17:31:51+08:00"
-              content="2017-05-14" >
-          05-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/14/Android-5-0-新特性/" itemprop="url">
-              
-                <span itemprop="name">Android 5.0 新特性</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-14T17:31:35+08:00"
-              content="2017-05-14" >
-          05-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/11/博客建设中的一些体会和记录/" itemprop="url">
-              
-                <span itemprop="name">博客网站建设中的一些体会和记录</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-11T23:07:36+08:00"
-              content="2017-05-11" >
-          05-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/10/140款Android开源优秀项目源码-菜鸟窝/" itemprop="url">
-              
-                <span itemprop="name">140款Android开源优秀项目源码-菜鸟窝</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-10T22:00:47+08:00"
-              content="2017-05-10" >
-          05-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/25/常用链接/" itemprop="url">
-              
-                <span itemprop="name">常用工具</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-25T09:29:49+08:00"
-              content="2017-04-25" >
-          04-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/24/中国大陆版权协议/" itemprop="url">
-              
-                <span itemprop="name">中国大陆版权协议</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-24T19:32:45+08:00"
-              content="2017-04-24" >
-          04-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/24/即时通讯/" itemprop="url">
-              
-                <span itemprop="name">即时通讯</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-24T18:22:18+08:00"
-              content="2017-04-24" >
-          04-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/23/设计模式/" itemprop="url">
-              
-                <span itemprop="name">简述 23 种设计模式</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-23T23:19:15+08:00"
-              content="2017-04-23" >
-          04-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/22/版权声明/" itemprop="url">
-              
-                <span itemprop="name">版权声明</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-22T15:29:43+08:00"
-              content="2017-04-22" >
-          04-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
+    </div>
+  </div>
 
 
           </div>
@@ -726,8 +727,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -893,6 +903,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Material-Design"><span class="nav-number">1.</span> <span class="nav-text">Material Design</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ToolBar"><span class="nav-number">2.</span> <span class="nav-text">ToolBar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态替换Theme"><span class="nav-number">3.</span> <span class="nav-text">动态替换Theme</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RecyclerView"><span class="nav-number">4.</span> <span class="nav-text">RecyclerView</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#水波纹动画，自定义水波纹动画以及状态选择器动画"><span class="nav-number">5.</span> <span class="nav-text">水波纹动画，自定义水波纹动画以及状态选择器动画</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CardView"><span class="nav-number">6.</span> <span class="nav-text">CardView</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#View-的高度与阴影"><span class="nav-number">7.</span> <span class="nav-text">View 的高度与阴影</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#View-的轮廓与裁剪"><span class="nav-number">8.</span> <span class="nav-text">View 的轮廓与裁剪</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Palette"><span class="nav-number">9.</span> <span class="nav-text">Palette</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Android-5-0-新特性的向下兼容"><span class="nav-number">10.</span> <span class="nav-text">Android 5.0 新特性的向下兼容</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -1032,11 +1058,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   

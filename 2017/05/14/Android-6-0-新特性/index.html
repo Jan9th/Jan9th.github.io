@@ -76,7 +76,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Jan9th, Hexo" />
+  <meta name="keywords" content="新特性," />
 
 
 
@@ -92,12 +92,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jan9th">
-<meta property="og:url" content="https://Jan9th.github.io/archives/index.html">
+<meta name="description" content="初步整理 Android 6.0 新控件 参考 tianzhu2725">
+<meta name="keywords" content="新特性">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android 6.0 新特性">
+<meta property="og:url" content="https://Jan9th.github.io/2017/05/14/Android-6-0-新特性/index.html">
 <meta property="og:site_name" content="Jan9th">
+<meta property="og:description" content="初步整理 Android 6.0 新控件 参考 tianzhu2725">
+<meta property="og:updated_time" content="2017-05-14T12:49:38.120Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jan9th">
+<meta name="twitter:title" content="Android 6.0 新特性">
+<meta name="twitter:description" content="初步整理 Android 6.0 新控件 参考 tianzhu2725">
 
 
 
@@ -125,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="https://Jan9th.github.io/archives/"/>
+  <link rel="canonical" href="https://Jan9th.github.io/2017/05/14/Android-6-0-新特性/"/>
 
 
 
 
 
-  <title>归档 | Jan9th</title>
+  <title>Android 6.0 新特性 | Jan9th</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -175,7 +180,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -303,403 +308,320 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 13 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://Jan9th.github.io/2017/05/14/Android-6-0-新特性/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jan9th">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jan9th">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                Android 6.0 新特性
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-14T17:31:51+08:00">
+                2017-05-14
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-05-14T20:49:38+08:00">
+                2017-05-14
+              </time>
+            
+          </span>
+
+          
+
+          
+
+          
+          
+             <span id="/2017/05/14/Android-6-0-新特性/" class="leancloud_visitors" data-flag-title="Android 6.0 新特性">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span title="字数统计">
+                  1,003
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
+      
+        <blockquote>
+<p>初步整理 Android 6.0 新控件 <a href="http://blog.csdn.net/tianzhu2725/article/details/52775285" target="_blank" rel="external">参考 tianzhu2725</a></p>
+</blockquote>
+<a id="more"></a>
+<h2 id="TextInputLayout"><a href="#TextInputLayout" class="headerlink" title="TextInputLayout"></a>TextInputLayout</h2><p>高级炫酷带有提示的输入框，相当于输入框中的战斗框<br>使用需要依赖 design 类库：</p>
+<p>使用步骤：</p>
+<p>先在 TextInputLayout 中包裹一个 EditText，如：<br>然后给 EditText 添加文本变化监听器：</p>
+<pre><code>editText.addTextChangedListener(new TextWatcher() {
+    @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+    }
+
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+    }
+
+    @Override
+    public void afterTextChanged(Editable s) {
+        if(s.length() &gt; 5){
+            //设置错误提示信息
+            inputLayout.setError(&quot;不能超过5个&quot;);
+            //启用错误提示
+            inputLayout.setErrorEnabled(true);
+        }else{
+            //关闭错误提示
+            inputLayout.setErrorEnabled(false);
+        }
+    }
+});
+</code></pre><h2 id="FloatingActionButton"><a href="#FloatingActionButton" class="headerlink" title="FloatingActionButton"></a>FloatingActionButton</h2><p>总是能悬浮在界面上的 Button，可以设置点击事件<br>使用需要依赖 design 类库：</p>
+<pre><code>compile &apos;com.android.support:design:23.0.0+&apos;
+</code></pre><p>可以设置以下属性：</p>
+<pre><code>app:fabSize=&quot;normal&quot;//2个取值，normal=56dp,mini=48dp
+app:elevation=&quot;10dp&quot;//高度
+app:rippleColor=&quot;#0000ff&quot;//按下水波纹颜色
+app:pressedTranslationZ=&quot;20dp&quot;//按下Z轴移动距离  
+</code></pre><p>注意：设置android:clickable=”true”才有按下的效果</p>
+<h2 id="Snackbar"><a href="#Snackbar" class="headerlink" title="Snackbar"></a>Snackbar</h2><p>一个介于 Toast 和 Dialog 之间的和用户交互的控件，显示在界面底部，并且可以设置点击行为，也可以滑动出去<br>在和 FloatingActionButton 一起使用时，需要让 CoordinatorLayout 作为父布局才能使FloatingActionButton 给 SnackBar 腾出空间</p>
+<h2 id="TabLayout"><a href="#TabLayout" class="headerlink" title="TabLayout"></a>TabLayout</h2><p>相当于 ViewPagerIndicator 的指示器效果，一般用来跟 ViewPager 结合使用<br>使用需要依赖design类库：</p>
+<pre><code>compile &apos;com.android.support:design:23.0.0+&apos;
+</code></pre><p>单独使用 TabLayout 的步骤：<br>先添加 Tab，使用 tabLayout.newTab()方法创建 Tab：</p>
+<pre><code>//1.添加Tab
+tabLayout.addTab(tabLayout.newTab().setText(&quot;Tab1&quot;));
+</code></pre><p>给 tabLayout 设置 tab 改变的监听器：</p>
+<pre><code>//2.给 tabLayout 添加 tab 改变的监听器
+tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+    @Override
+    public void onTabSelected(TabLayout.Tab tab) {
+        Log.e(&quot;TAG&quot;, &quot;onTabSelected: &quot;+tab.getText());
+    }
+    @Override
+    public void onTabUnselected(TabLayout.Tab tab) {
+    }
+    @Override
+    public void onTabReselected(TabLayout.Tab tab) {
+    }
+});
+</code></pre><p>在 xml 中给 TabLayout 设置属性：</p>
+<pre><code>app:tabIndicatorColor=&quot;#00f&quot;//横线颜色
+app:tabSelectedTextColor=&quot;#f00&quot;//选中字体颜色
+app:tabTextColor=&quot;#0f0&quot;//默认字体颜色
+app:tabMode=&quot;fixed&quot;//fixed：不能滑动，每个Tab平分宽度，scrollable:可以滑动tab，每个tab宽度很小，适用于tab很多的情景
+app:tabGravity=&quot;fill&quot;//fill:平分宽度，center:让tab居中,如果tabMode是scrollable，那tabGravity会被忽略
+</code></pre><p>和 ViewPager 关联使用步骤：</p>
+<p>先给 ViewPager 填充数据，然后关联 TabLayout 和 ViewPager：</p>
+<pre><code>//给ViewPager填充数据
+viewpager.setAdapter(new MyAdapter());
+//关联TabLayout和ViewPager
+tabLayout.setupWithViewPager(viewpager);
+</code></pre><p>需要注意的是，ViewPager 的 adapter 的 getPageTitle() 方法的返回值将会设置给 Tab 的标题</p>
+<h2 id="CoordinatorLayout"><a href="#CoordinatorLayout" class="headerlink" title="CoordinatorLayout"></a>CoordinatorLayout</h2><p>协调布局，能够协调多个布局的位置关系，可以实现让 FAB 上下滑动，展开或折叠 ToolBar，控制View 扩展收缩以及放大缩小</p>
+<p>使用需要依赖 design 类库：</p>
+<pre><code>compile &apos;com.android.support:design:23.0.0+&apos;
+</code></pre><p>使用它结合 AppBarLayout 实现向上滑动隐藏 ToolBar 的效果：</p>
+<p>AppBarLayout 会将包裹的所有子 View 作为一个整体的 AppBar，有着统一的界面着色;<br>app:layout_scrollFlags 属性介绍：<br>scroll:表示该 View 可以被滑动出 CoordinatorLayout 的范围，所有想滚动出屏幕的 view 都需要设置这个 flag， 没有设置这个 flag 的 view 将被固定在屏幕顶部。例如，TabLayout 没有设置这个值，将会停留在屏幕顶部</p>
+<p>enterAlways:表示任意向下的滚动都会导致该 View 可见<br>exitUntilCollapsed:滚动退出屏幕，最后折叠在顶端<br>enterAlwaysCollapsed:当你的视图已经设置 minHeight 属性又使用此标志时，你的视图只能以最小高度进入，只有当滚动视图到达顶部时才扩大到完整高度</p>
+<p>给想滑动出范围的 View 设置属性，比如 ToolBar：</p>
+<pre><code>app:layout_scrollFlags=”scroll|enterAlways
+</code></pre><p>给发出滑动行为的View设置属性，比如 ViewPager：</p>
+<pre><code>app:layout_behavior=&quot;@string/appbar_scrolling_view_behavior&quot;
+</code></pre><p>实现步骤：</p>
+<p>1.CoordinatorLayout 作根控件，包裹 AppBarLayout 和可滚动的控件，比如 ViewPager<br>2.AppBarLayout 包裹 ToolBar 及TabLayout，<br>  ToolBar 要滑动，给其设置 app:layout_scrollFlags<br>3.ViewPager 是发出滑动行为的控件，设置属性 app:layout_behavior<br>注意：带 layout_scrollFlags 的 view 需要放在固定 View 的前面，这样滑动的 view 才能够正常退出，而固定的 view 继续留在顶部</p>
+
+      
+    </div>
+
+    <div>
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/uploads/avatar.jpg" alt="Jan9th WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
       
       
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/uploads/avatar.jpg" alt="Jan9th Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
 
       
+    </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+    <div>
+      
         
-            <a class="post-title-link" href="/2017/05/14/他山之石/" itemprop="url">
-              
-                <span itemprop="name">他山之石</span>
-              
-            </a>
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Jan9th
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://Jan9th.github.io/2017/05/14/Android-6-0-新特性/" title="Android 6.0 新特性">https://Jan9th.github.io/2017/05/14/Android-6-0-新特性/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/新特性/" rel="tag"># 新特性</a>
+          
+        </div>
+      
+
+      
         
-      </h2>
+      
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-14T19:51:30+08:00"
-              content="2017-05-14" >
-          05-14
-        </time>
-      </div>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/14/他山之石/" rel="next" title="他山之石">
+                <i class="fa fa-chevron-left"></i> 他山之石
+              </a>
+            
+          </div>
 
-    </header>
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/14/Android-5-0-新特性/" rel="prev" title="Android 5.0 新特性">
+                Android 5.0 新特性 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
+    <div class="post-spread">
       
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/14/Android-6-0-新特性/" itemprop="url">
-              
-                <span itemprop="name">Android 6.0 新特性</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-14T17:31:51+08:00"
-              content="2017-05-14" >
-          05-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/14/Android-5-0-新特性/" itemprop="url">
-              
-                <span itemprop="name">Android 5.0 新特性</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-14T17:31:35+08:00"
-              content="2017-05-14" >
-          05-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/11/博客建设中的一些体会和记录/" itemprop="url">
-              
-                <span itemprop="name">博客网站建设中的一些体会和记录</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-11T23:07:36+08:00"
-              content="2017-05-11" >
-          05-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/10/140款Android开源优秀项目源码-菜鸟窝/" itemprop="url">
-              
-                <span itemprop="name">140款Android开源优秀项目源码-菜鸟窝</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-10T22:00:47+08:00"
-              content="2017-05-10" >
-          05-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/25/常用链接/" itemprop="url">
-              
-                <span itemprop="name">常用工具</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-25T09:29:49+08:00"
-              content="2017-04-25" >
-          04-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/24/中国大陆版权协议/" itemprop="url">
-              
-                <span itemprop="name">中国大陆版权协议</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-24T19:32:45+08:00"
-              content="2017-04-24" >
-          04-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/24/即时通讯/" itemprop="url">
-              
-                <span itemprop="name">即时通讯</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-24T18:22:18+08:00"
-              content="2017-04-24" >
-          04-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/23/设计模式/" itemprop="url">
-              
-                <span itemprop="name">简述 23 种设计模式</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-23T23:19:15+08:00"
-              content="2017-04-23" >
-          04-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/22/版权声明/" itemprop="url">
-              
-                <span itemprop="name">版权声明</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-22T15:29:43+08:00"
-              content="2017-04-22" >
-          04-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
+    </div>
+  </div>
 
 
           </div>
@@ -726,8 +648,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -893,6 +824,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#TextInputLayout"><span class="nav-number">1.</span> <span class="nav-text">TextInputLayout</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FloatingActionButton"><span class="nav-number">2.</span> <span class="nav-text">FloatingActionButton</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Snackbar"><span class="nav-number">3.</span> <span class="nav-text">Snackbar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TabLayout"><span class="nav-number">4.</span> <span class="nav-text">TabLayout</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CoordinatorLayout"><span class="nav-number">5.</span> <span class="nav-text">CoordinatorLayout</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -1032,11 +979,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   
