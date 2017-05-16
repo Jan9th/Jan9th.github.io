@@ -99,7 +99,7 @@
 <meta property="og:url" content="https://Jan9th.github.io/2017/05/14/Android-6-0-新特性/index.html">
 <meta property="og:site_name" content="Jan9th">
 <meta property="og:description" content="初步整理 Android 6.0 新控件 参考 tianzhu2725">
-<meta property="og:updated_time" content="2017-05-14T12:49:38.120Z">
+<meta property="og:updated_time" content="2017-05-14T15:27:30.380Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android 6.0 新特性">
 <meta name="twitter:description" content="初步整理 Android 6.0 新控件 参考 tianzhu2725">
@@ -366,12 +366,32 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-05-14T20:49:38+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-05-14T23:27:30+08:00">
                 2017-05-14
               </time>
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/默认分类/" itemprop="url" rel="index">
+                    <span itemprop="name">默认分类</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -399,7 +419,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  1,003
+                  1,010
                 </span>
               
 
@@ -436,8 +456,9 @@
 </blockquote>
 <a id="more"></a>
 <h2 id="TextInputLayout"><a href="#TextInputLayout" class="headerlink" title="TextInputLayout"></a>TextInputLayout</h2><p>高级炫酷带有提示的输入框，相当于输入框中的战斗框<br>使用需要依赖 design 类库：</p>
-<p>使用步骤：</p>
-<p>先在 TextInputLayout 中包裹一个 EditText，如：<br>然后给 EditText 添加文本变化监听器：</p>
+<pre><code>compile &apos;com.android.support:design:23.0.0+&apos;
+</code></pre><p>使用步骤：</p>
+<p>先在 TextInputLayout 中包裹一个 EditText,然后给 EditText 添加文本变化监听器：</p>
 <pre><code>editText.addTextChangedListener(new TextWatcher() {
     @Override
     public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -469,7 +490,7 @@
 app:elevation=&quot;10dp&quot;//高度
 app:rippleColor=&quot;#0000ff&quot;//按下水波纹颜色
 app:pressedTranslationZ=&quot;20dp&quot;//按下Z轴移动距离  
-</code></pre><p>注意：设置android:clickable=”true”才有按下的效果</p>
+</code></pre><p>注意：设置 <code>android:clickable=&quot;true&quot;</code> 才有按下的效果</p>
 <h2 id="Snackbar"><a href="#Snackbar" class="headerlink" title="Snackbar"></a>Snackbar</h2><p>一个介于 Toast 和 Dialog 之间的和用户交互的控件，显示在界面底部，并且可以设置点击行为，也可以滑动出去<br>在和 FloatingActionButton 一起使用时，需要让 CoordinatorLayout 作为父布局才能使FloatingActionButton 给 SnackBar 腾出空间</p>
 <h2 id="TabLayout"><a href="#TabLayout" class="headerlink" title="TabLayout"></a>TabLayout</h2><p>相当于 ViewPagerIndicator 的指示器效果，一般用来跟 ViewPager 结合使用<br>使用需要依赖design类库：</p>
 <pre><code>compile &apos;com.android.support:design:23.0.0+&apos;
@@ -673,7 +694,7 @@ tabLayout.setupWithViewPager(viewpager);
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -695,7 +716,7 @@ tabLayout.setupWithViewPager(viewpager);
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
