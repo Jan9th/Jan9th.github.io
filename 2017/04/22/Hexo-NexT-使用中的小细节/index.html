@@ -96,10 +96,10 @@
 <meta name="keywords" content="Hexo,NexT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo NexT 使用中的小细节">
-<meta property="og:url" content="https://Jan9th.github.io/2017/04/22/Hexo-NexT-使用中的小细节/index.html">
+<meta property="og:url" content="http://Jan9th.github.io/2017/04/22/Hexo-NexT-使用中的小细节/index.html">
 <meta property="og:site_name" content="Jan9th">
 <meta property="og:description" content="Hexo NexT 应用中的小技巧，使用过程中不定期更新。">
-<meta property="og:updated_time" content="2017-05-16T10:36:25.656Z">
+<meta property="og:updated_time" content="2017-05-19T13:50:14.175Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo NexT 使用中的小细节">
 <meta name="twitter:description" content="Hexo NexT 应用中的小技巧，使用过程中不定期更新。">
@@ -130,7 +130,7 @@
 
 
 
-  <link rel="canonical" href="https://Jan9th.github.io/2017/04/22/Hexo-NexT-使用中的小细节/"/>
+  <link rel="canonical" href="http://Jan9th.github.io/2017/04/22/Hexo-NexT-使用中的小细节/"/>
 
 
 
@@ -318,7 +318,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://Jan9th.github.io/2017/04/22/Hexo-NexT-使用中的小细节/">
+    <link itemprop="mainEntityOfPage" href="http://Jan9th.github.io/2017/04/22/Hexo-NexT-使用中的小细节/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jan9th">
@@ -366,12 +366,32 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-05-16T18:36:25+08:00">
-                2017-05-16
+              <time title="更新于" itemprop="dateModified" datetime="2017-05-19T21:50:14+08:00">
+                2017-05-19
               </time>
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/教程/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -401,7 +421,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  968
+                  1,084
                 </span>
               
 
@@ -415,7 +435,7 @@
                 </span>
                 
                 <span title="阅读时长">
-                  4
+                  5
                 </span>
               
             </div>
@@ -563,12 +583,18 @@ baidusitemap:
 域名注册商处修改域名地址为域名解析商提供的解析名
 
 全球递归DNS服务器刷新等待 24h ~ 72h 生效
-</code></pre><p>域名解析流向： 域名注册商–&gt; 域名解析商–&gt; 个人域名<br><a href="https://www.freenom.com/" target="_blank" rel="external">Freenom</a><br><a href="https://www.freehao123.com/ten-dns/" target="_blank" rel="external">十大免费DNS域名解析服务</a><br><a href="http://itcoding.tk/2016/06/26/set-up-custom-domain-for-github-pages/" target="_blank" rel="external">参考</a><br><a href="https://www.dnspod.cn/" target="_blank" rel="external">DNSPod/Tencent DNS 解析</a><br><a href="http://www.ruanyifeng.com/blog/2016/06/dns.html" target="_blank" rel="external">DNS 原理</a></p>
+</code></pre><p>域名解析流向： 域名注册商–&gt; 域名解析商–&gt; 个人域名 </p>
+<p><a href="https://www.freenom.com/" target="_blank" rel="external">Freenom</a><br><a href="https://www.freehao123.com/ten-dns/" target="_blank" rel="external">十大免费DNS域名解析服务</a><br><a href="http://itcoding.tk/2016/06/26/set-up-custom-domain-for-github-pages/" target="_blank" rel="external">参考</a><br><a href="https://www.dnspod.cn/" target="_blank" rel="external">DNSPod/Tencent DNS 解析</a><br><a href="http://www.ruanyifeng.com/blog/2016/06/dns.html" target="_blank" rel="external">DNS 原理</a></p>
+<p>经实践：阿里云解析 cf 域名失败，有的网页甚至不识别 cf 域名，不明白具体的是怎么回事，有说 freenom 不支持第三方解析的，未知。</p>
 <h4 id="错误警告"><a href="#错误警告" class="headerlink" title="错误警告"></a>错误警告</h4><blockquote>
 <p>warning: LF will be replaced by CRLF in XXXXXXXXXXXXXX.的警告。<br><code>git config --global core.autocrlf false</code></p>
 <p>unix/Linux/mac/windows 不同系统对应回车、换行的定义不一样，Git 存储时，有针对于 不同平台间的转换，是某种操作导致了这种转换被开启，与二进制存储时是否可逆有关系，具体的不是十分明白。</p>
 <p>全面教程<br><a href="http://www.jianshu.com/p/e0058573964c" target="_blank" rel="external">格子林ll 简书</a></p>
 </blockquote>
+<h4 id="自动构建"><a href="#自动构建" class="headerlink" title="自动构建"></a>自动构建</h4><p>安装和设置部分：<br>    ruby -v # ruby 2.2.6p396 (2016-11-15 revision 56800) [x64-mingw32]<br>    gem install travis -v 1.8.8 –no-rdoc –no-ri<br>    travis version # 1.8.8 –&gt; travis is ok</p>
+<pre><code>设置 Travis CI Hook 的 github name 和 travis token
+</code></pre><p>部署： 待进行……</p>
+<p><a href="http://www.cnblogs.com/huang0925/archive/2013/05/30/3108370.html" target="_blank" rel="external">持续集成</a><br><a href="http://www.ruby-lang.org/en/downloads/" target="_blank" rel="external">Ruby</a><br><a href="https://rubyinstaller.org/" target="_blank" rel="external">Windows Ruby</a></p>
 
       
     </div>
@@ -618,7 +644,7 @@ baidusitemap:
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://Jan9th.github.io/2017/04/22/Hexo-NexT-使用中的小细节/" title="Hexo NexT 使用中的小细节">https://Jan9th.github.io/2017/04/22/Hexo-NexT-使用中的小细节/</a>
+      <a href="http://Jan9th.github.io/2017/04/22/Hexo-NexT-使用中的小细节/" title="Hexo NexT 使用中的小细节">http://Jan9th.github.io/2017/04/22/Hexo-NexT-使用中的小细节/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -893,7 +919,7 @@ baidusitemap:
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#中文模式"><span class="nav-number">1.</span> <span class="nav-text">中文模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新生效"><span class="nav-number">2.</span> <span class="nav-text">更新生效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地搜索"><span class="nav-number">3.</span> <span class="nav-text">本地搜索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建分类"><span class="nav-number">4.</span> <span class="nav-text">创建分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建-tag-页"><span class="nav-number">5.</span> <span class="nav-text">创建 tag 页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#more-字段"><span class="nav-number">6.</span> <span class="nav-text">more 字段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改模版"><span class="nav-number">7.</span> <span class="nav-text">修改模版</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多-tag"><span class="nav-number">8.</span> <span class="nav-text">多 tag</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建草稿"><span class="nav-number">9.</span> <span class="nav-text">创建草稿</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发布草稿"><span class="nav-number">10.</span> <span class="nav-text">发布草稿</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多个分类"><span class="nav-number">11.</span> <span class="nav-text">多个分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字数统计"><span class="nav-number">12.</span> <span class="nav-text">字数统计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#打赏禁止动画"><span class="nav-number">13.</span> <span class="nav-text">打赏禁止动画</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#内链颜色"><span class="nav-number">14.</span> <span class="nav-text">内链颜色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看版本"><span class="nav-number">15.</span> <span class="nav-text">查看版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#卸载"><span class="nav-number">16.</span> <span class="nav-text">卸载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#置顶"><span class="nav-number">17.</span> <span class="nav-text">置顶</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ico-转换"><span class="nav-number">18.</span> <span class="nav-text">ico 转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网站标签页"><span class="nav-number">19.</span> <span class="nav-text">网站标签页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#站点收录"><span class="nav-number">20.</span> <span class="nav-text">站点收录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#远程仓库更改"><span class="nav-number">21.</span> <span class="nav-text">远程仓库更改</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可视化操作"><span class="nav-number">22.</span> <span class="nav-text">可视化操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#域名绑定"><span class="nav-number">23.</span> <span class="nav-text">域名绑定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#错误警告"><span class="nav-number">24.</span> <span class="nav-text">错误警告</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#中文模式"><span class="nav-number">1.</span> <span class="nav-text">中文模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新生效"><span class="nav-number">2.</span> <span class="nav-text">更新生效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地搜索"><span class="nav-number">3.</span> <span class="nav-text">本地搜索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建分类"><span class="nav-number">4.</span> <span class="nav-text">创建分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建-tag-页"><span class="nav-number">5.</span> <span class="nav-text">创建 tag 页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#more-字段"><span class="nav-number">6.</span> <span class="nav-text">more 字段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改模版"><span class="nav-number">7.</span> <span class="nav-text">修改模版</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多-tag"><span class="nav-number">8.</span> <span class="nav-text">多 tag</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建草稿"><span class="nav-number">9.</span> <span class="nav-text">创建草稿</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发布草稿"><span class="nav-number">10.</span> <span class="nav-text">发布草稿</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多个分类"><span class="nav-number">11.</span> <span class="nav-text">多个分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字数统计"><span class="nav-number">12.</span> <span class="nav-text">字数统计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#打赏禁止动画"><span class="nav-number">13.</span> <span class="nav-text">打赏禁止动画</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#内链颜色"><span class="nav-number">14.</span> <span class="nav-text">内链颜色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看版本"><span class="nav-number">15.</span> <span class="nav-text">查看版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#卸载"><span class="nav-number">16.</span> <span class="nav-text">卸载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#置顶"><span class="nav-number">17.</span> <span class="nav-text">置顶</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ico-转换"><span class="nav-number">18.</span> <span class="nav-text">ico 转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网站标签页"><span class="nav-number">19.</span> <span class="nav-text">网站标签页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#站点收录"><span class="nav-number">20.</span> <span class="nav-text">站点收录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#远程仓库更改"><span class="nav-number">21.</span> <span class="nav-text">远程仓库更改</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可视化操作"><span class="nav-number">22.</span> <span class="nav-text">可视化操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#域名绑定"><span class="nav-number">23.</span> <span class="nav-text">域名绑定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#错误警告"><span class="nav-number">24.</span> <span class="nav-text">错误警告</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自动构建"><span class="nav-number">25.</span> <span class="nav-text">自动构建</span></a></li></ol></div>
             
 
           </div>
