@@ -99,7 +99,7 @@
 <meta property="og:url" content="http://Jan9th.github.io/2017/05/21/RxJava-学习/index.html">
 <meta property="og:site_name" content="Jan9th">
 <meta property="og:description" content="个人收藏学习 RxJava">
-<meta property="og:updated_time" content="2017-05-21T06:46:26.558Z">
+<meta property="og:updated_time" content="2017-05-21T10:25:54.200Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="RxJava 学习">
 <meta name="twitter:description" content="个人收藏学习 RxJava">
@@ -366,7 +366,7 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-05-21T14:46:26+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-05-21T18:25:54+08:00">
                 2017-05-21
               </time>
             
@@ -419,7 +419,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  328
+                  516
                 </span>
               
 
@@ -433,7 +433,7 @@
                 </span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -488,7 +488,13 @@
 <h3 id="Better-Explanation-of-RxJava-and-Using-It-In-Android"><a href="#Better-Explanation-of-RxJava-and-Using-It-In-Android" class="headerlink" title="Better Explanation of RxJava and Using It In Android"></a>Better Explanation of RxJava and Using It In Android</h3><p><a href="https://medium.com/@kurtisnusbaum/rxandroid-basics-part-1-c0d5edcf6850#.z6ha43z02" target="_blank" rel="external">link</a></p>
 <h3 id="响应式编程全面介绍"><a href="#响应式编程全面介绍" class="headerlink" title="响应式编程全面介绍"></a>响应式编程全面介绍</h3><p><a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754" target="_blank" rel="external">Link here.</a></p>
 <h3 id="RxJava-介绍"><a href="#RxJava-介绍" class="headerlink" title="RxJava 介绍"></a>RxJava 介绍</h3><p><a href="https://github.com/Froussios/Intro-To-RxJava" target="_blank" rel="external">Link here.</a></p>
-<h3 id="Crunching-RxAndroid"><a href="#Crunching-RxAndroid" class="headerlink" title="Crunching RxAndroid"></a>Crunching RxAndroid</h3><h3 id="为什么要在-Android-中使用-RxJava"><a href="#为什么要在-Android-中使用-RxJava" class="headerlink" title="为什么要在 Android 中使用 RxJava?"></a>为什么要在 Android 中使用 RxJava?</h3>
+<h3 id="Crunching-RxAndroid"><a href="#Crunching-RxAndroid" class="headerlink" title="Crunching RxAndroid"></a>Crunching RxAndroid</h3><h3 id="为什么要在-Android-中使用-RxJava"><a href="#为什么要在-Android-中使用-RxJava" class="headerlink" title="为什么要在 Android 中使用 RxJava?"></a>为什么要在 Android 中使用 RxJava?</h3><blockquote>
+<p>理解和整理</p>
+</blockquote>
+<p>RxJava 中有 backpressure 概念，在 RxJava 1 后期版本中默认都扩展了，但并不是所有的资源都有这个需要。<br>backpressure 继承时必须处理，是处在事件的最前面，必须要处理。<br>在 RxJava 2 中将这种情况分开来处理了，分为两种类型 Observable 和 Flowable ，前者没有背压，后者有背压</p>
+<p>触摸事件采用的是无背压的 observable，发射事件是可以不受阻塞/或者不减速的得到响应的。<br>可控制的用背压形式的 flowable ，是交互式的，根据需求去拉取。</p>
+<p>通过一定的策略可以将两种类型相互装换，但开发者并不打算这样去设计（Jake Wharton ）。</p>
+
       
     </div>
 
