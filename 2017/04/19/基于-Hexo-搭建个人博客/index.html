@@ -96,10 +96,10 @@
 <meta name="keywords" content="Hexo,NexT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于 Hexo 搭建个人博客">
-<meta property="og:url" content="http://Jan9th.github.io/2017/04/19/基于-Hexo-搭建个人博客/index.html">
+<meta property="og:url" content="https://Jan9th.github.io/2017/04/19/基于-Hexo-搭建个人博客/index.html">
 <meta property="og:site_name" content="Jan9th">
 <meta property="og:description" content="摘要 博客由 GitHub 托管，采用 GitHub Pager 静态网页 + Hexo 博客框架 + NexT 主题，本文介绍了博客搭建的关键步骤。">
-<meta property="og:updated_time" content="2017-05-19T10:51:34.152Z">
+<meta property="og:updated_time" content="2017-05-24T13:49:50.637Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于 Hexo 搭建个人博客">
 <meta name="twitter:description" content="摘要 博客由 GitHub 托管，采用 GitHub Pager 静态网页 + Hexo 博客框架 + NexT 主题，本文介绍了博客搭建的关键步骤。">
@@ -130,7 +130,7 @@
 
 
 
-  <link rel="canonical" href="http://Jan9th.github.io/2017/04/19/基于-Hexo-搭建个人博客/"/>
+  <link rel="canonical" href="https://Jan9th.github.io/2017/04/19/基于-Hexo-搭建个人博客/"/>
 
 
 
@@ -145,6 +145,15 @@
 
 
 
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-99819342-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 
   <script type="text/javascript">
@@ -309,7 +318,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://Jan9th.github.io/2017/04/19/基于-Hexo-搭建个人博客/">
+    <link itemprop="mainEntityOfPage" href="https://Jan9th.github.io/2017/04/19/基于-Hexo-搭建个人博客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jan9th">
@@ -357,8 +366,8 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-05-19T18:51:34+08:00">
-                2017-05-19
+              <time title="更新于" itemprop="dateModified" datetime="2017-05-24T21:49:50+08:00">
+                2017-05-24
               </time>
             
           </span>
@@ -412,7 +421,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  1,445
+                  1,305
                 </span>
               
 
@@ -426,7 +435,7 @@
                 </span>
                 
                 <span title="阅读时长">
-                  6
+                  5
                 </span>
               
             </div>
@@ -505,26 +514,18 @@ $ cat ~/.ssh/id_rsa.pub # 抓取配置中的 ssh key，可以先复制下来。
 <blockquote>
 <p><code>repo</code> 是仓库地址 <code>.deploy</code> 和 <code>xxx</code> 是文件夹</p>
 </blockquote>
-<h2 id="创建脚本"><a href="#创建脚本" class="headerlink" title="创建脚本"></a>创建脚本</h2><h3 id="脚本-1"><a href="#脚本-1" class="headerlink" title="脚本 1"></a>脚本 1</h3><pre><code>hexo clean     # 命名为 .sh 文件
-hexo g         
+<h2 id="创建脚本"><a href="#创建脚本" class="headerlink" title="创建脚本"></a>创建脚本</h2><pre><code>cd X：/Blog # 切换到网站根目录
+hexo clean # 清除
+hexo g # 生成
+cp -R public/* .deploy/xxx # copy 
+cd .deploy/xxx # 切换目录
+git add . # add
+git commit -m &quot;update&quot; # 提交信息
+git push origin master # 推送
 </code></pre><blockquote>
-<p>可用于清除旧主题，生成新网页。</p>
-</blockquote>
-<h3 id="脚本-2"><a href="#脚本-2" class="headerlink" title="脚本 2"></a>脚本 2</h3><pre><code>hexo g    # 推荐命名为 deploy.sh。
-cp -R public/* .deploy/xxx
-cd .deploy/xxx # 与上述一致 
-git add .    # add 后面有空格和点
-git commit -m &quot;update&quot; # master 
-git push origin master # 推送服务器
-</code></pre><p>使用: </p>
-<ul>
-<li>先使用脚本 1 用于清除缓存和静态网页，再使用脚本 2 用于向服务器仓库推送。</li>
-<li>脚本可自行搭配，注意扩展名，并放到之前初始化过的 <code>X:\Blog</code> 根目录。<h3 id="脚本-3"><a href="#脚本-3" class="headerlink" title="脚本 3"></a>脚本 3</h3>  cd X：/Blog # 切换到网站根目录<br>  hexo clean # 清除<br>  hexo g # 生成<br>  cp -R public/* .deploy/xxx # copy<br>  cd .deploy/xxx # 切换目录<br>  git add . # add<br>  git commit -m “update” # 提交信息<br>  git push origin master # 推送<blockquote>
 <p>更改 <code>X</code> 和 <code>Blog</code> 对应到安装路径根目录</p>
-<h2 id="文章创建"><a href="#文章创建" class="headerlink" title="文章创建"></a>文章创建</h2><h3 id="创建新文件"><a href="#创建新文件" class="headerlink" title="创建新文件"></a>创建新文件</h3><p>  $ hexo new Hello</p>
-</blockquote>
-</li>
-</ul>
+<h2 id="文章创建"><a href="#文章创建" class="headerlink" title="文章创建"></a>文章创建</h2><h3 id="创建新文件"><a href="#创建新文件" class="headerlink" title="创建新文件"></a>创建新文件</h3><pre><code>$ hexo new Hello
+</code></pre></blockquote>
 <h3 id="生成网页-1"><a href="#生成网页-1" class="headerlink" title="生成网页"></a>生成网页</h3><pre><code>$ hexo g    
 </code></pre><h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><blockquote>
 <p>每次更换主题前需要更改网站配置文件 <code>_config.yml</code> 中 <code>themes</code> 节点对应的本地已有的主题名，Blog 安装目录/子目录下执行 <code>$ hexo clean</code> 清除旧主题,再执行静态网页生成 <code>$ hexo g</code> 、本地预览 <code>$ hexo s</code>、部署 <code>$ hexo d</code> 步骤。</p>
@@ -651,7 +652,7 @@ $ origin  remoteRepoAdress (push)</code>    <blockquote>
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://Jan9th.github.io/2017/04/19/基于-Hexo-搭建个人博客/" title="基于 Hexo 搭建个人博客">http://Jan9th.github.io/2017/04/19/基于-Hexo-搭建个人博客/</a>
+      <a href="https://Jan9th.github.io/2017/04/19/基于-Hexo-搭建个人博客/" title="基于 Hexo 搭建个人博客">https://Jan9th.github.io/2017/04/19/基于-Hexo-搭建个人博客/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -682,8 +683,8 @@ $ origin  remoteRepoAdress (push)</code>    <blockquote>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/22/Hexo-NexT-使用中的小细节/" rel="next" title="Hexo NexT 使用中的小细节">
-                <i class="fa fa-chevron-left"></i> Hexo NexT 使用中的小细节
+              <a href="/2017/04/22/About-Hexo/" rel="next" title="关于 Hexo">
+                <i class="fa fa-chevron-left"></i> 关于 Hexo
               </a>
             
           </div>
@@ -949,7 +950,7 @@ $ origin  remoteRepoAdress (push)</code>    <blockquote>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具安装"><span class="nav-number">2.</span> <span class="nav-text">工具安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">2.1.</span> <span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Git-工具"><span class="nav-number">2.2.</span> <span class="nav-text">安装 Git 工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-Git-工具安装-Hexo"><span class="nav-number">2.3.</span> <span class="nav-text">使用 Git 工具安装 Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-认证"><span class="nav-number">3.</span> <span class="nav-text">GitHub 认证</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置-username-和-email"><span class="nav-number">3.1.</span> <span class="nav-text">配置 username 和 email</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成认证指纹"><span class="nav-number">3.2.</span> <span class="nav-text">生成认证指纹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加-ssh-key"><span class="nav-number">3.3.</span> <span class="nav-text">添加 ssh key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建仓库"><span class="nav-number">3.4.</span> <span class="nav-text">创建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建连接"><span class="nav-number">3.5.</span> <span class="nav-text">创建连接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快速启动"><span class="nav-number">4.</span> <span class="nav-text">快速启动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化"><span class="nav-number">4.1.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成网页"><span class="nav-number">4.2.</span> <span class="nav-text">生成网页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动服务"><span class="nav-number">4.3.</span> <span class="nav-text">启动服务</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拉取仓库"><span class="nav-number">5.</span> <span class="nav-text">拉取仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建脚本"><span class="nav-number">6.</span> <span class="nav-text">创建脚本</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#脚本-1"><span class="nav-number">6.1.</span> <span class="nav-text">脚本 1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#脚本-2"><span class="nav-number">6.2.</span> <span class="nav-text">脚本 2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#脚本-3"><span class="nav-number">6.3.</span> <span class="nav-text">脚本 3</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章创建"><span class="nav-number">7.</span> <span class="nav-text">文章创建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建新文件"><span class="nav-number">7.1.</span> <span class="nav-text">创建新文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成网页-1"><span class="nav-number">7.2.</span> <span class="nav-text">生成网页</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换主题"><span class="nav-number">8.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程仓库"><span class="nav-number">9.</span> <span class="nav-text">远程仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化本地"><span class="nav-number">9.1.</span> <span class="nav-text">初始化本地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拉取到本地"><span class="nav-number">9.2.</span> <span class="nav-text">拉取到本地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加多个远程仓库"><span class="nav-number">9.3.</span> <span class="nav-text">添加多个远程仓库</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用指令"><span class="nav-number">10.</span> <span class="nav-text">常用指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题"><span class="nav-number">11.</span> <span class="nav-text">常见问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考及收藏"><span class="nav-number">12.</span> <span class="nav-text">参考及收藏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站"><span class="nav-number">13.</span> <span class="nav-text">网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客改造"><span class="nav-number">14.</span> <span class="nav-text">博客改造</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地预览"><span class="nav-number">15.</span> <span class="nav-text">本地预览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#待改造"><span class="nav-number">16.</span> <span class="nav-text">待改造</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具安装"><span class="nav-number">2.</span> <span class="nav-text">工具安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">2.1.</span> <span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Git-工具"><span class="nav-number">2.2.</span> <span class="nav-text">安装 Git 工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-Git-工具安装-Hexo"><span class="nav-number">2.3.</span> <span class="nav-text">使用 Git 工具安装 Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-认证"><span class="nav-number">3.</span> <span class="nav-text">GitHub 认证</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置-username-和-email"><span class="nav-number">3.1.</span> <span class="nav-text">配置 username 和 email</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成认证指纹"><span class="nav-number">3.2.</span> <span class="nav-text">生成认证指纹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加-ssh-key"><span class="nav-number">3.3.</span> <span class="nav-text">添加 ssh key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建仓库"><span class="nav-number">3.4.</span> <span class="nav-text">创建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建连接"><span class="nav-number">3.5.</span> <span class="nav-text">创建连接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快速启动"><span class="nav-number">4.</span> <span class="nav-text">快速启动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化"><span class="nav-number">4.1.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成网页"><span class="nav-number">4.2.</span> <span class="nav-text">生成网页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动服务"><span class="nav-number">4.3.</span> <span class="nav-text">启动服务</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拉取仓库"><span class="nav-number">5.</span> <span class="nav-text">拉取仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建脚本"><span class="nav-number">6.</span> <span class="nav-text">创建脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章创建"><span class="nav-number">7.</span> <span class="nav-text">文章创建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建新文件"><span class="nav-number">7.1.</span> <span class="nav-text">创建新文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成网页-1"><span class="nav-number">7.2.</span> <span class="nav-text">生成网页</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换主题"><span class="nav-number">8.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程仓库"><span class="nav-number">9.</span> <span class="nav-text">远程仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化本地"><span class="nav-number">9.1.</span> <span class="nav-text">初始化本地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拉取到本地"><span class="nav-number">9.2.</span> <span class="nav-text">拉取到本地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加多个远程仓库"><span class="nav-number">9.3.</span> <span class="nav-text">添加多个远程仓库</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用指令"><span class="nav-number">10.</span> <span class="nav-text">常用指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题"><span class="nav-number">11.</span> <span class="nav-text">常见问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考及收藏"><span class="nav-number">12.</span> <span class="nav-text">参考及收藏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站"><span class="nav-number">13.</span> <span class="nav-text">网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客改造"><span class="nav-number">14.</span> <span class="nav-text">博客改造</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地预览"><span class="nav-number">15.</span> <span class="nav-text">本地预览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#待改造"><span class="nav-number">16.</span> <span class="nav-text">待改造</span></a></li></ol></div>
             
 
           </div>
