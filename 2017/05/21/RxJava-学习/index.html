@@ -99,12 +99,27 @@
 <meta property="og:url" content="https://Jan9th.github.io/2017/05/21/RxJava-学习/index.html">
 <meta property="og:site_name" content="Jan9th">
 <meta property="og:description" content="个人收藏学习 RxJava">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/01.png">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/02.png">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/03.png">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/04.png">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/05.png">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/06.png">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/07.png">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/08.png">
 <meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/ReactiveStreams.png">
-<meta property="og:updated_time" content="2017-05-27T14:49:01.159Z">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/Source.png">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/Single.png">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/Completable.png">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/Maybe.png">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/Total.png">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/SourcesBefore.png">
+<meta property="og:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/SourcesAfter.png">
+<meta property="og:updated_time" content="2017-05-27T16:40:34.751Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="RxJava 学习">
 <meta name="twitter:description" content="个人收藏学习 RxJava">
-<meta name="twitter:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/ReactiveStreams.png">
+<meta name="twitter:image" content="https://jan9th.github.io/2017/05/21/RxJava-学习/01.png">
 
 
 
@@ -369,8 +384,8 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-05-27T22:49:01+08:00">
-                2017-05-27
+              <time title="更新于" itemprop="dateModified" datetime="2017-05-28T00:40:34+08:00">
+                2017-05-28
               </time>
             
           </span>
@@ -422,7 +437,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  568
+                  591
                 </span>
               
 
@@ -463,13 +478,14 @@
 {% asset_img slug [title] %}
 {% asset_link slug [title] %}
 // 实例
-{% asset_path 01.png %}
-{% asset_img 01.png 图片 %}
-{% asset_link 01.png 图片 %}
-</code></pre><p>原文：<br><a href="/a/anzhuokaifa/androidkaifa/2017/0505/7912.html">RxJava资源合集－学习RxJava,看这里就够了</a></p>
+{% asset_path 01.png %} 显示相对路径
+{% asset_img 01.png 图片 %} 
+{% asset_link 01.png 图片 %} 文字显示为一个超链接
+</code></pre><p>原文：<br><a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0505/7912.html" target="_blank" rel="external">RxJava资源合集－学习RxJava,看这里就够了</a></p>
 /2017/05/21/RxJava-学习/01.png
 <p><a href="https://blog.mindorks.com/a-complete-guide-to-learn-rxjava-b55c0cea3631?gi=18a3d69ccc6b" target="_blank" rel="external">A Complete Guide To Learn RxJava</a></p>
-<h2 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h2><p>什么是 RxJava ?</p>
+<h2 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h2><img src="/2017/05/21/RxJava-学习/01.png" alt="RxJava" title="RxJava"> 
+<p>什么是 RxJava ?</p>
 <blockquote>
 <p>RxJava 是响应式程序设计的一种实现。在响应式程序设计中，当数据到达的时候，消费者做出响应。响应式编程可以将事件传递给注册了的 observer。</p>
 </blockquote>
@@ -477,21 +493,28 @@
 <p>那么什么是命令行式编程呢？ </p>
 <blockquote>
 </blockquote>
-<h3 id="Grokking-RxJava-系列"><a href="#Grokking-RxJava-系列" class="headerlink" title="Grokking RxJava 系列"></a><a href="http://blog.danlew.net/2014/09/15/grokking-rxjava-part-1/" target="_blank" rel="external">Grokking RxJava 系列</a></h3><h3 id="通过例子学习RxJava（Learn-RxJava-By-Examples）"><a href="#通过例子学习RxJava（Learn-RxJava-By-Examples）" class="headerlink" title="通过例子学习RxJava（Learn RxJava By Examples）"></a>通过例子学习RxJava（Learn RxJava By Examples）</h3><p>通过例子学习是最佳的学习方式。<br>它包含许多例子，如：</p>
+<h3 id="Grokking-RxJava-系列"><a href="#Grokking-RxJava-系列" class="headerlink" title="Grokking RxJava 系列"></a><a href="http://blog.danlew.net/2014/09/15/grokking-rxjava-part-1/" target="_blank" rel="external">Grokking RxJava 系列</a></h3><h3 id="通过例子学习RxJava（Learn-RxJava-By-Examples）"><a href="#通过例子学习RxJava（Learn-RxJava-By-Examples）" class="headerlink" title="通过例子学习RxJava（Learn RxJava By Examples）"></a>通过例子学习RxJava（Learn RxJava By Examples）</h3><img src="/2017/05/21/RxJava-学习/02.png" alt="Learn RxJava By Examples" title="Learn RxJava By Examples"> 
+<p>通过例子学习是最佳的学习方式。<br>它包含许多例子，如：</p>
 <pre><code>如何使用操作符？
 如何做网络调用？
 如何实现RxBus(EventBus)?
 如何使用RxJava实现pagination？
 </code></pre><p>另一个学习RxJava的例子是Kaushik的RxJava-Android-Samples</p>
+<img src="/2017/05/21/RxJava-学习/03.png" alt="RxJava" title="RxJava"> 
 <h3 id="Jake-Wharton-视频"><a href="#Jake-Wharton-视频" class="headerlink" title="Jake Wharton 视频"></a>Jake Wharton 视频</h3><p><a href="https://www.youtube.com/watch?v=htIXKI5gOQU" target="_blank" rel="external">探索RxJava 2</a> </p>
 <p><a href="https://www.youtube.com/watch?v=0IKHxjkgop4" target="_blank" rel="external">使用RxJava管理状态(Managing State with RxJava by Jake Wharton)</a> </p>
 <p>另一个通过例子学习 RxJava 的视频</p>
 <p><a href="https://www.youtube.com/watch?v=k3D0cWyNno4" target="_blank" rel="external">视频地址</a> </p>
-<h3 id="理解-RxJava-Subject-—-Publish-Replay-Behavior-以及-Async-Subject"><a href="#理解-RxJava-Subject-—-Publish-Replay-Behavior-以及-Async-Subject" class="headerlink" title="理解 RxJava Subject — Publish, Replay, Behavior 以及 Async Subject"></a>理解 RxJava Subject — Publish, Replay, Behavior 以及 Async Subject</h3><h3 id="在网络中使用-RxJava（Using-RxJava-In-Networking）"><a href="#在网络中使用-RxJava（Using-RxJava-In-Networking）" class="headerlink" title="在网络中使用 RxJava（Using RxJava In Networking）"></a>在网络中使用 RxJava（Using RxJava In Networking）</h3><p><a href="https://blog.mindorks.com/rxjava-fast-android-networking-6e3d90ee4387" target="_blank" rel="external">link</a></p>
-<h3 id="Better-Explanation-of-RxJava-and-Using-It-In-Android"><a href="#Better-Explanation-of-RxJava-and-Using-It-In-Android" class="headerlink" title="Better Explanation of RxJava and Using It In Android"></a>Better Explanation of RxJava and Using It In Android</h3><p><a href="https://medium.com/@kurtisnusbaum/rxandroid-basics-part-1-c0d5edcf6850#.z6ha43z02" target="_blank" rel="external">link</a></p>
+<h3 id="理解-RxJava-Subject-—-Publish-Replay-Behavior-以及-Async-Subject"><a href="#理解-RxJava-Subject-—-Publish-Replay-Behavior-以及-Async-Subject" class="headerlink" title="理解 RxJava Subject — Publish, Replay, Behavior 以及 Async Subject"></a>理解 RxJava Subject — Publish, Replay, Behavior 以及 Async Subject</h3><img src="/2017/05/21/RxJava-学习/04.png" alt="RxJava" title="RxJava"> 
+<h3 id="在网络中使用-RxJava（Using-RxJava-In-Networking）"><a href="#在网络中使用-RxJava（Using-RxJava-In-Networking）" class="headerlink" title="在网络中使用 RxJava（Using RxJava In Networking）"></a>在网络中使用 RxJava（Using RxJava In Networking）</h3><img src="/2017/05/21/RxJava-学习/05.png" alt="RxJava" title="RxJava"> 
+<p><a href="https://blog.mindorks.com/rxjava-fast-android-networking-6e3d90ee4387" target="_blank" rel="external">link</a></p>
+<h3 id="Better-Explanation-of-RxJava-and-Using-It-In-Android"><a href="#Better-Explanation-of-RxJava-and-Using-It-In-Android" class="headerlink" title="Better Explanation of RxJava and Using It In Android"></a>Better Explanation of RxJava and Using It In Android</h3><img src="/2017/05/21/RxJava-学习/06.png" alt="RxJava" title="RxJava"> 
+<p><a href="https://medium.com/@kurtisnusbaum/rxandroid-basics-part-1-c0d5edcf6850#.z6ha43z02" target="_blank" rel="external">link</a></p>
 <h3 id="响应式编程全面介绍"><a href="#响应式编程全面介绍" class="headerlink" title="响应式编程全面介绍"></a>响应式编程全面介绍</h3><p><a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754" target="_blank" rel="external">Link here.</a></p>
 <h3 id="RxJava-介绍"><a href="#RxJava-介绍" class="headerlink" title="RxJava 介绍"></a>RxJava 介绍</h3><p><a href="https://github.com/Froussios/Intro-To-RxJava" target="_blank" rel="external">Link here.</a></p>
-<h3 id="Crunching-RxAndroid"><a href="#Crunching-RxAndroid" class="headerlink" title="Crunching RxAndroid"></a>Crunching RxAndroid</h3><h3 id="为什么要在-Android-中使用-RxJava"><a href="#为什么要在-Android-中使用-RxJava" class="headerlink" title="为什么要在 Android 中使用 RxJava?"></a>为什么要在 Android 中使用 RxJava?</h3><h2 id="第二部分"><a href="#第二部分" class="headerlink" title="第二部分"></a>第二部分</h2><p><a href="http://gank.io/post/560e15be2dca930e00da1083#toc_3" target="_blank" rel="external">给 Android 开发者的 RxJava 详解</a></p>
+<h3 id="Crunching-RxAndroid"><a href="#Crunching-RxAndroid" class="headerlink" title="Crunching RxAndroid"></a>Crunching RxAndroid</h3><img src="/2017/05/21/RxJava-学习/07.png" alt="RxJava" title="RxJava"> 
+<h3 id="为什么要在-Android-中使用-RxJava"><a href="#为什么要在-Android-中使用-RxJava" class="headerlink" title="为什么要在 Android 中使用 RxJava?"></a>为什么要在 Android 中使用 RxJava?</h3><img src="/2017/05/21/RxJava-学习/08.png" alt="RxJava" title="RxJava"> 
+<h2 id="第二部分"><a href="#第二部分" class="headerlink" title="第二部分"></a>第二部分</h2><p><a href="http://gank.io/post/560e15be2dca930e00da1083#toc_3" target="_blank" rel="external">给 Android 开发者的 RxJava 详解</a></p>
 <p><a href="https://gank.io/post/56e80c2c677659311bed9841" target="_blank" rel="external">RxJava 与 Retrofit 结合的最佳实践</a></p>
 <h2 id="第三部分"><a href="#第三部分" class="headerlink" title="第三部分"></a>第三部分</h2><blockquote>
 <p>理解和整理</p>
@@ -499,8 +522,25 @@
 <p>RxJava 中有 backpressure 概念，在 RxJava 1 后期版本中默认都扩展了，但并不是所有的资源都有这个需要。<br>backpressure 继承时必须处理，是处在事件的最前面，必须要处理。<br>在 RxJava 2 中将这种情况分开来处理了，分为两种类型 Observable 和 Flowable ，前者没有背压，后者有背压</p>
 <p>触摸事件采用的是无背压的 observable，发射事件是可以不受阻塞/或者不减速的得到响应的。<br>可控制的用背压形式的 flowable ，是交互式的，根据需求去拉取。</p>
 <p>通过一定的策略可以将两种类型相互装换，但开发者并不打算这样去设计（Jake Wharton ）。</p>
-<p>Reactive Streams<br>    is an initiative(主动的) to provide a standard for asynchrous stream  processing with non-blocking back prossur.</p>
-<img src="/2017/05/21/RxJava-学习/ReactiveStreams.png" alt="This is an ReactiveStreams image" title="This is an ReactiveStreams image">
+<ul>
+<li><p><strong>Reactive Streams </strong><br>  is an initiative(主动的) to provide a standard for asynchrous stream  processing with non-blocking back prossure.</p>
+  <img src="/2017/05/21/RxJava-学习/ReactiveStreams.png" alt="ReactiveStreams" title="ReactiveStreams">
+<p>Source </p>
+  <img src="/2017/05/21/RxJava-学习/Source.png" alt="Source" title="Source">
+<p>Single</p>
+  <img src="/2017/05/21/RxJava-学习/Single.png" alt="Single" title="Single">
+<p>Comlete</p>
+  <img src="/2017/05/21/RxJava-学习/Completable.png" alt="Completable" title="Completable">
+<p>Maybe</p>
+  <img src="/2017/05/21/RxJava-学习/Maybe.png" alt="Maybe" title="Maybe">
+<p>Total</p>
+  <img src="/2017/05/21/RxJava-学习/Total.png" alt="Total" title="Total">
+<p>SourcesBefore</p>
+  <img src="/2017/05/21/RxJava-学习/SourcesBefore.png" alt="SourcesBefore" title="SourcesBefore">
+<p>SourcesAfter</p>
+  <img src="/2017/05/21/RxJava-学习/SourcesAfter.png" alt="SourcesAfter" title="SourcesAfter">
+</li>
+</ul>
 
       
     </div>
