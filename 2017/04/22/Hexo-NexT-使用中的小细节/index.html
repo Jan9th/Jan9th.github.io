@@ -99,7 +99,7 @@
 <meta property="og:url" content="https://Jan9th.github.io/2017/04/22/Hexo-NexT-使用中的小细节/index.html">
 <meta property="og:site_name" content="Jan9th">
 <meta property="og:description" content="Hexo NexT 应用中的小技巧，使用过程中不定期更新。">
-<meta property="og:updated_time" content="2017-05-26T14:38:12.612Z">
+<meta property="og:updated_time" content="2017-05-29T09:22:46.497Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo NexT 使用中的小细节">
 <meta name="twitter:description" content="Hexo NexT 应用中的小技巧，使用过程中不定期更新。">
@@ -367,8 +367,8 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-05-26T22:38:12+08:00">
-                2017-05-26
+              <time title="更新于" itemprop="dateModified" datetime="2017-05-29T17:22:46+08:00">
+                2017-05-29
               </time>
             
           </span>
@@ -422,7 +422,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  1,756
+                  1,780
                 </span>
               
 
@@ -458,6 +458,7 @@
 <p>Hexo NexT 应用中的小技巧，使用过程中不定期更新。</p>
 </blockquote>
 <a id="more"></a>
+<hr>
 <h4 id="中文模式"><a href="#中文模式" class="headerlink" title="中文模式"></a>中文模式</h4><blockquote>
 <p>站点：<br><code>language: zh-Hans</code></p>
 </blockquote>
@@ -467,12 +468,9 @@
 <h4 id="本地搜索"><a href="#本地搜索" class="headerlink" title="本地搜索"></a>本地搜索</h4><ul>
 <li><p>安装 <code>hexo-generator-searchdb</code> 插件，执行 <code>npm install hexo-generator-searchdb --save</code> </p>
 </li>
-<li><p>增加站点配置，如下：<br>&gt;<br>  search:</p>
-<pre><code>path: search.xml
-field: post
-format: html
-limit: 10000
-</code></pre></li>
+<li><p>增加站点配置，如下：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">search:</div><div class="line">  path: search.xml</div><div class="line">  field: post</div><div class="line">  format: html</div><div class="line">  limit: 10000</div></pre></td></tr></table></figure>
+</li>
 </ul>
 <h4 id="创建分类"><a href="#创建分类" class="headerlink" title="创建分类"></a>创建分类</h4><ul>
 <li>创建分类页 <code>hexo new page categories</code></li>
@@ -488,17 +486,7 @@ limit: 10000
 <h4 id="修改模版"><a href="#修改模版" class="headerlink" title="修改模版"></a>修改模版</h4><blockquote>
 <p>scaffolds 文件夹中 <code>post.md</code> <code>page.md</code> <code>draft.md</code> 文件为模版文件</p>
 </blockquote>
-<pre><code>--#-
-title: {{ title }} 
-categories: 
-tags: 
-comments: false 
---#- 
-
-&lt;!#--more--&gt;
-</code></pre><blockquote>
-<p>去掉所有的 <code>#</code> 成为自定义模版文件</p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: &#123;&#123; title &#125;&#125; </div><div class="line">categories: </div><div class="line">tags: </div><div class="line">comments: false </div><div class="line">--- </div><div class="line"></div><div class="line">&lt;!--more--&gt;</div></pre></td></tr></table></figure>
 <h4 id="多-tag"><a href="#多-tag" class="headerlink" title="多 tag"></a>多 tag</h4><ul>
 <li>tag: [Hexo,NexT] 英文符号，中间有个空格。</li>
 </ul>
@@ -517,13 +505,8 @@ comments: false
 <li><code>next/source/css/_common/components/post/post-reward.styl</code> 中注释 alipay 和 wechart 动画<br><a href="http://www.vitah.net/posts/20f300cc/" target="_blank" rel="external"></a></li>
 </ul>
 <h4 id="内链颜色"><a href="#内链颜色" class="headerlink" title="内链颜色"></a>内链颜色</h4><ul>
-<li><code>themes\next\source\css\_common\components\post\post.styl</code> 中自定义样式<br>&gt;<br>  .post-body p a{<pre><code>color: #0593d3;
-border-bottom: none;
-&amp;:hover {
-  color: #0477ab;
-  text-decoration: underline;
-}
-</code></pre>  }</li>
+<li><code>themes\next\source\css\_common\components\post\post.styl</code> 中自定义样式 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.post-body p a&#123;</div><div class="line">  color: #0593d3;</div><div class="line">  border-bottom: none;</div><div class="line">  &amp;:hover &#123;</div><div class="line">    color: #0477ab;</div><div class="line">    text-decoration: underline;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
 </ul>
 <h4 id="查看版本"><a href="#查看版本" class="headerlink" title="查看版本"></a>查看版本</h4><ul>
 <li>使用 <code>hexo -v</code> </li>
@@ -545,17 +528,9 @@ border-bottom: none;
 </ul>
 <h4 id="站点地图"><a href="#站点地图" class="headerlink" title="站点地图"></a>站点地图</h4><p>插件</p>
 <p><code>$ npm install hexo-generator-baidu-sitemap --save</code><br><code>$ npm install hexo-generator-sitemap --save</code> </p>
-<ul>
-<li><p>网站配置中增加节点</p>
-<pre><code>sitemap: 
-  path: sitemap.xml
-baidusitemap:
-  path: baidusitemap.xml
-</code></pre></li>
-<li><p>生成，预览<br><code>$ hexo g</code><br><code>$ hexo s</code><br>如果不生效就先执行<code>$ hexo clean</code></p>
-</li>
-</ul>
-<p>版权所有者：<a href="http://svend.cc/" target="_blank" rel="external">svend</a><br><a href="http://svend.cc/posts/22980/" target="_blank" rel="external">Hexo系列：(四)Hexo博客提交百度和Google收录</a></p>
+<p>网站配置中增加节点</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sitemap: </div><div class="line">  path: sitemap.xml</div><div class="line">baidusitemap:</div><div class="line">  path: baidusitemap.xml</div></pre></td></tr></table></figure>
+<p>生成，预览<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">`$ hexo g`</div><div class="line">`$ hexo s`</div></pre></td></tr></table></figure></p>
 <h4 id="Google-收录"><a href="#Google-收录" class="headerlink" title="Google 收录"></a>Google 收录</h4><p><a href="https://github.com/iissnan/hexo-theme-next/wiki/%E6%B7%BB%E5%8A%A0-Google-Webmaster-tools-%E9%AA%8C%E8%AF%81" target="_blank" rel="external">使用 Google Webmaster tools 方式收录</a></p>
 <ul>
 <li><p><a href="https://www.google.com/webmasters/tools/" target="_blank" rel="external">设置 Google 站点管理工具 的验证字符串，用于提交 sitemap</a></p>
@@ -567,14 +542,14 @@ baidusitemap:
 <p>  google_site_verification: XXXXXXXXXXXXXXXXXXXXXXX</p>
 </li>
 </ul>
-<p>Google Analytics（分析）<br>    使用您的 Google Analytics（分析）帐号。 </p>
-<p>HTML 文件上传<br>    将 HTML 文件上传到您的网站。 </p>
-<p>域名提供商<br>    登录到您的域名提供商网站。 </p>
-<p>Google 跟踪代码管理器<br>    使用您的 Google 跟踪代码管理器帐号。 </p>
-<p>HTML 标记<br>    已使用此方法进行了验证。</p>
+<p>四种方式：<br>Google Analytics（分析）</p>
+<p>HTML 文件上传</p>
+<p>域名提供商 </p>
+<p>Google 跟踪代码管理器</p>
+<p>HTML 标记</p>
 <h4 id="百度收录"><a href="#百度收录" class="headerlink" title="百度收录"></a>百度收录</h4><ul>
 <li><p>文件验证</p>
-<p>  百度不支持 <code>Https</code> 协议，<code>GitHub</code> 禁止了百度爬虫。</p>
+<p>  百度不支持 <code>Https</code> 协议，据说是 <code>GitHub</code> 禁止了百度爬虫。</p>
 </li>
 <li><p>HTML 标签验证</p>
 <p>  参照 <a href="http://www.ehcoo.com/seo.html" target="_blank" rel="external">【搜索优化】Hexo-next百度和谷歌搜索优化</a><br>  <code>themes\next\layout\_partials\header.swing</code> 路径下</p>
@@ -594,64 +569,22 @@ baidusitemap:
 <p>安装 <code>sitemap</code> 插件</p>
 <pre><code>npm install hexo-generator-sitemap --save
 npm install hexo-generator-baidu-sitemap --save
-</code></pre><p>站点配置</p>
-<pre><code>sitemap:
-    path: sitemap.xml
-baidusitemap:
-    path: baidusitemap.xml
-</code></pre><p>创建 <code>robots.txt</code> 文件，配置到站点中</p>
-<pre><code>User-agent: *
-Allow: /
-Allow: /archives/
-Allow: /categories/
-Allow: /tags/
-
-Disallow: /vendors/
-Disallow: /js/
-Disallow: /css/
-Disallow: /fonts/
-Disallow: /vendors/
-Disallow: /fancybox/
-Sitemap: https://Xxx.github.io/sitemap.xml
-Sitemap: https://Xxx.github.io/baidusitemap.xml # 目前该配置未生效，push 生效了。
-</code></pre><h4 id="添加-nofollow-标签"><a href="#添加-nofollow-标签" class="headerlink" title="添加 nofollow 标签"></a>添加 nofollow 标签</h4><p>设计的自定义太多，未修改。</p>
+</code></pre><p>站点配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sitemap:</div><div class="line">	path: sitemap.xml</div><div class="line">baidusitemap:</div><div class="line">	path: baidusitemap.xml</div></pre></td></tr></table></figure></p>
+<p>创建 <code>robots.txt</code> 文件，配置到站点中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">User-agent: *</div><div class="line">Allow: /</div><div class="line">Allow: /archives/</div><div class="line">Allow: /categories/</div><div class="line">Allow: /tags/</div><div class="line"></div><div class="line">Disallow: /vendors/</div><div class="line">Disallow: /js/</div><div class="line">Disallow: /css/</div><div class="line">Disallow: /fonts/</div><div class="line">Disallow: /vendors/</div><div class="line">Disallow: /fancybox/</div><div class="line">Sitemap: https://Xxx.github.io/sitemap.xml</div><div class="line">Sitemap: https://Xxx.github.io/baidusitemap.xml # 目前该配置未生效，push 生效了。</div></pre></td></tr></table></figure></p>
+<h4 id="添加-nofollow-标签"><a href="#添加-nofollow-标签" class="headerlink" title="添加 nofollow 标签"></a>添加 nofollow 标签</h4><p>设计的自定义太多，未修改。</p>
 <p><a href="http://www.ehcoo.com/seo.html" target="_blank" rel="external">【搜索优化】Hexo-next百度和谷歌搜索优化</a></p>
-<h4 id="404-页面"><a href="#404-页面" class="headerlink" title="404 页面"></a>404 页面</h4><p>目前在主题中配置，站点中好像也可以。</p>
-<pre><code>&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8;&quot;/&gt;
-  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
-  &lt;meta name=&quot;robots&quot; content=&quot;all&quot; /&gt;
-  &lt;meta name=&quot;robots&quot; content=&quot;index,follow&quot;/&gt;
-  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://qzone.qq.com/gy/404/style/404style.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;script type=&quot;text/plain&quot; src=&quot;http://www.qq.com/404/search_children.js&quot;
-          charset=&quot;utf-8&quot; homePageUrl=&quot;/&quot;
-          homePageName=&quot;返回博客&quot;&gt;
-  &lt;/script&gt;
-  &lt;script src=&quot;https://qzone.qq.com/gy/404/data.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;https://qzone.qq.com/gy/404/page.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><h4 id="远程仓库更改"><a href="#远程仓库更改" class="headerlink" title="远程仓库更改"></a>远程仓库更改</h4><ul>
+<h4 id="404-页面"><a href="#404-页面" class="headerlink" title="404 页面"></a>404 页面</h4><p>目前在主题中配置，站点中好像也可以。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE HTML&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8;&quot;/&gt;</div><div class="line">  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;</div><div class="line">  &lt;meta name=&quot;robots&quot; content=&quot;all&quot; /&gt;</div><div class="line">  &lt;meta name=&quot;robots&quot; content=&quot;index,follow&quot;/&gt;</div><div class="line">  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://qzone.qq.com/gy/404/style/404style.css&quot;&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">  &lt;script type=&quot;text/plain&quot; src=&quot;http://www.qq.com/404/search_children.js&quot;</div><div class="line">          charset=&quot;utf-8&quot; homePageUrl=&quot;/&quot;</div><div class="line">          homePageName=&quot;返回博客&quot;&gt;</div><div class="line">  &lt;/script&gt;</div><div class="line">  &lt;script src=&quot;https://qzone.qq.com/gy/404/data.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</div><div class="line">  &lt;script src=&quot;https://qzone.qq.com/gy/404/page.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<h4 id="远程仓库更改"><a href="#远程仓库更改" class="headerlink" title="远程仓库更改"></a>远程仓库更改</h4><ul>
 <li>仓库地址查看 <code>git remote -v</code></li>
 <li>更换仓库 <code>git remote set-url origin &lt;repo&gt;</code> </li>
 <li>空仓库添加仓库 <code>git remote add origin &lt;repo&gt;</code></li>
 <li>本地仓库改名 <code>git remote rename [current name] [new name]</code></li>
 <li>移除本地仓库名 <code>git remote rm origin</code> 此操作所有 origin 均会被移除</li>
-<li><h4 id="可视化操作"><a href="#可视化操作" class="headerlink" title="可视化操作"></a>可视化操作</h4></li>
 </ul>
-<p>插件</p>
+<h4 id="可视化操作"><a href="#可视化操作" class="headerlink" title="可视化操作"></a>可视化操作</h4><p>插件</p>
 <pre><code>`npm install hexo-hey --save`
-</code></pre><p>site config：</p>
-<pre><code>admin:
-    name: hexo
-    password: hey
-    secret: hey hexo
-    expire: 60*1
-</code></pre><p>访问：</p>
+</code></pre><p>site config：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">admin:</div><div class="line">    name: hexo</div><div class="line">    password: hey</div><div class="line">    secret: hey hexo</div><div class="line">    expire: 60*1</div></pre></td></tr></table></figure></p>
+<p>访问：</p>
 <pre><code>localhost:4000/admin
 </code></pre><p><a href="https://github.com/nihgwu/hexo-hey" target="_blank" rel="external">插件地址</a><br><a href="http://www.jianshu.com/p/834d7cc0668d" target="_blank" rel="external">参考</a></p>
 <h4 id="移动设备易用性"><a href="#移动设备易用性" class="headerlink" title="移动设备易用性"></a>移动设备易用性</h4><p>谷歌检测屏幕适配显示有问题。</p>
@@ -665,8 +598,22 @@ Sitemap: https://Xxx.github.io/baidusitemap.xml # 目前该配置未生效，pus
 &lt;a name=&quot;xxx&quot;&gt;定义&lt;/a&gt;
 </code></pre><blockquote>
 <p><a href="http://blog.csdn.net/yangkai_hudong/article/details/14163483" target="_blank" rel="external">锚点</a></p>
-<h4 id="域名绑定（失败告终）"><a href="#域名绑定（失败告终）" class="headerlink" title="域名绑定（失败告终）"></a>域名绑定（失败告终）</h4></blockquote>
-<p>四大一级免费域名： tk cf ml ga</p>
+</blockquote>
+<h4 id="图片-音乐-视频"><a href="#图片-音乐-视频" class="headerlink" title="图片 音乐 视频"></a>图片 音乐 视频</h4><p><a href="http://blog.wleyuan.me/2015/07/18/Hexo-AddSoundPicMovie/" target="_blank" rel="external">Hexo 博客添加图片、音乐、视频</a></p>
+<p>图片语法： <code>![text](url)</code></p>
+<p>代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 </div><div class="line">	src=&quot;http://music.163.com/outchain/player?type=2&amp;id=25706282&amp;auto=0&amp;height=66&quot;&gt;</div><div class="line">&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
+<p>效果：</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=25706282&auto=0&height=66"><br></iframe>
+
+<p>居中代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 </div><div class="line">	src=&quot;http://music.163.com/outchain/player?type=2&amp;id=25706282&amp;auto=0&amp;height=66&quot;&gt;</div><div class="line">&lt;/iframe&gt;	</div><div class="line">&lt;/center&gt;</div></pre></td></tr></table></figure></p>
+<p>居中效果：(设置失败)</p>
+<center><br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=25706282&auto=0&height=66"><br></iframe><br></center>
+
+
+<p>视频：Idina Menze 和 Caleb Hyles 激情对唱 Let It Go：</p>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XNjcyMDU4Njg0" frameborder="0" allowfullscreen><br></iframe>
+
+<h4 id="域名绑定（失败告终）"><a href="#域名绑定（失败告终）" class="headerlink" title="域名绑定（失败告终）"></a>域名绑定（失败告终）</h4><p>四大一级免费域名： tk cf ml ga</p>
 <p>步骤：</p>
 <pre><code>域名查询可用
 
@@ -688,6 +635,7 @@ Sitemap: https://Xxx.github.io/baidusitemap.xml # 目前该配置未生效，pus
 <pre><code>设置 Travis CI Hook 的 github name 和 travis token
 </code></pre><p>部署： 待进行……</p>
 <p><a href="http://www.cnblogs.com/huang0925/archive/2013/05/30/3108370.html" target="_blank" rel="external">持续集成</a><br><a href="http://www.ruby-lang.org/en/downloads/" target="_blank" rel="external">Ruby</a><br><a href="https://rubyinstaller.org/" target="_blank" rel="external">Windows Ruby</a></p>
+<hr>
 
       
     </div>
@@ -852,7 +800,7 @@ Sitemap: https://Xxx.github.io/baidusitemap.xml # 目前该配置未生效，pus
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -863,7 +811,7 @@ Sitemap: https://Xxx.github.io/baidusitemap.xml # 目前该配置未生效，pus
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -874,7 +822,7 @@ Sitemap: https://Xxx.github.io/baidusitemap.xml # 目前该配置未生效，pus
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1005,7 +953,7 @@ Sitemap: https://Xxx.github.io/baidusitemap.xml # 目前该配置未生效，pus
                 </li>
               
                 <li class="links-of-blogroll-item">
-                  <a href="https://www.youtube.com" title="Youtube" target="_blank">Youtube</a>
+                  <a href="https://www.youtube.com" title="YouTube" target="_blank">YouTube</a>
                 </li>
               
                 <li class="links-of-blogroll-item">
@@ -1043,7 +991,7 @@ Sitemap: https://Xxx.github.io/baidusitemap.xml # 目前该配置未生效，pus
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#中文模式"><span class="nav-number">1.</span> <span class="nav-text">中文模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新生效"><span class="nav-number">2.</span> <span class="nav-text">更新生效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地搜索"><span class="nav-number">3.</span> <span class="nav-text">本地搜索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建分类"><span class="nav-number">4.</span> <span class="nav-text">创建分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建-tag-页"><span class="nav-number">5.</span> <span class="nav-text">创建 tag 页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#more-字段"><span class="nav-number">6.</span> <span class="nav-text">more 字段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改模版"><span class="nav-number">7.</span> <span class="nav-text">修改模版</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多-tag"><span class="nav-number">8.</span> <span class="nav-text">多 tag</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建草稿"><span class="nav-number">9.</span> <span class="nav-text">创建草稿</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发布草稿"><span class="nav-number">10.</span> <span class="nav-text">发布草稿</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多个分类"><span class="nav-number">11.</span> <span class="nav-text">多个分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字数统计"><span class="nav-number">12.</span> <span class="nav-text">字数统计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#打赏禁止动画"><span class="nav-number">13.</span> <span class="nav-text">打赏禁止动画</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#内链颜色"><span class="nav-number">14.</span> <span class="nav-text">内链颜色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看版本"><span class="nav-number">15.</span> <span class="nav-text">查看版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#卸载"><span class="nav-number">16.</span> <span class="nav-text">卸载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#置顶"><span class="nav-number">17.</span> <span class="nav-text">置顶</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ico-转换"><span class="nav-number">18.</span> <span class="nav-text">ico 转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网站标签页"><span class="nav-number">19.</span> <span class="nav-text">网站标签页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#站点地图"><span class="nav-number">20.</span> <span class="nav-text">站点地图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Google-收录"><span class="nav-number">21.</span> <span class="nav-text">Google 收录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#百度收录"><span class="nav-number">22.</span> <span class="nav-text">百度收录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#谷歌分析"><span class="nav-number">23.</span> <span class="nav-text">谷歌分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Google-站点地图"><span class="nav-number">24.</span> <span class="nav-text">Google 站点地图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#爬虫"><span class="nav-number">25.</span> <span class="nav-text">爬虫</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加-nofollow-标签"><span class="nav-number">26.</span> <span class="nav-text">添加 nofollow 标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#404-页面"><span class="nav-number">27.</span> <span class="nav-text">404 页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#远程仓库更改"><span class="nav-number">28.</span> <span class="nav-text">远程仓库更改</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可视化操作"><span class="nav-number">29.</span> <span class="nav-text">可视化操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#移动设备易用性"><span class="nav-number">30.</span> <span class="nav-text">移动设备易用性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Google-默认字符串"><span class="nav-number">31.</span> <span class="nav-text">Google 默认字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#锚点"><span class="nav-number">32.</span> <span class="nav-text">锚点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#域名绑定（失败告终）"><span class="nav-number">33.</span> <span class="nav-text">域名绑定（失败告终）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#错误警告"><span class="nav-number">34.</span> <span class="nav-text">错误警告</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自动构建"><span class="nav-number">35.</span> <span class="nav-text">自动构建</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#中文模式"><span class="nav-number">1.</span> <span class="nav-text">中文模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新生效"><span class="nav-number">2.</span> <span class="nav-text">更新生效</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地搜索"><span class="nav-number">3.</span> <span class="nav-text">本地搜索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建分类"><span class="nav-number">4.</span> <span class="nav-text">创建分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建-tag-页"><span class="nav-number">5.</span> <span class="nav-text">创建 tag 页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#more-字段"><span class="nav-number">6.</span> <span class="nav-text">more 字段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改模版"><span class="nav-number">7.</span> <span class="nav-text">修改模版</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多-tag"><span class="nav-number">8.</span> <span class="nav-text">多 tag</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建草稿"><span class="nav-number">9.</span> <span class="nav-text">创建草稿</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发布草稿"><span class="nav-number">10.</span> <span class="nav-text">发布草稿</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多个分类"><span class="nav-number">11.</span> <span class="nav-text">多个分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字数统计"><span class="nav-number">12.</span> <span class="nav-text">字数统计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#打赏禁止动画"><span class="nav-number">13.</span> <span class="nav-text">打赏禁止动画</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#内链颜色"><span class="nav-number">14.</span> <span class="nav-text">内链颜色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看版本"><span class="nav-number">15.</span> <span class="nav-text">查看版本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#卸载"><span class="nav-number">16.</span> <span class="nav-text">卸载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#置顶"><span class="nav-number">17.</span> <span class="nav-text">置顶</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ico-转换"><span class="nav-number">18.</span> <span class="nav-text">ico 转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网站标签页"><span class="nav-number">19.</span> <span class="nav-text">网站标签页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#站点地图"><span class="nav-number">20.</span> <span class="nav-text">站点地图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Google-收录"><span class="nav-number">21.</span> <span class="nav-text">Google 收录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#百度收录"><span class="nav-number">22.</span> <span class="nav-text">百度收录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#谷歌分析"><span class="nav-number">23.</span> <span class="nav-text">谷歌分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Google-站点地图"><span class="nav-number">24.</span> <span class="nav-text">Google 站点地图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#爬虫"><span class="nav-number">25.</span> <span class="nav-text">爬虫</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加-nofollow-标签"><span class="nav-number">26.</span> <span class="nav-text">添加 nofollow 标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#404-页面"><span class="nav-number">27.</span> <span class="nav-text">404 页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#远程仓库更改"><span class="nav-number">28.</span> <span class="nav-text">远程仓库更改</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可视化操作"><span class="nav-number">29.</span> <span class="nav-text">可视化操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#移动设备易用性"><span class="nav-number">30.</span> <span class="nav-text">移动设备易用性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Google-默认字符串"><span class="nav-number">31.</span> <span class="nav-text">Google 默认字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#锚点"><span class="nav-number">32.</span> <span class="nav-text">锚点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图片-音乐-视频"><span class="nav-number">33.</span> <span class="nav-text">图片 音乐 视频</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#域名绑定（失败告终）"><span class="nav-number">34.</span> <span class="nav-text">域名绑定（失败告终）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#错误警告"><span class="nav-number">35.</span> <span class="nav-text">错误警告</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自动构建"><span class="nav-number">36.</span> <span class="nav-text">自动构建</span></a></li></ol></div>
             
 
           </div>

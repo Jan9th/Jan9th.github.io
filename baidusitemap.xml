@@ -4,8 +4,50 @@
 
     
   <url>
+    <loc>https://Jan9th.github.io/2017/05/29/XX-Net-Wiki/</loc>
+    <lastmod>2017-05-29T09:24:04.525Z</lastmod>
+    <data>
+        <display>
+        <title>XX-Net Wiki</title>
+        <pubTime>2017-05-29T08:31:48.000Z</pubTime>
+        
+        <tag>XX-Net</tag>
+         
+         
+           
+             
+              <breadCrumb title="Wiki" url="https://Jan9th.github.io/categories/Wiki/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://Jan9th.github.io/2017/04/22/Hexo-NexT-%E4%BD%BF%E7%94%A8%E4%B8%AD%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82/</loc>
+    <lastmod>2017-05-29T09:22:46.497Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo NexT 使用中的小细节</title>
+        <pubTime>2017-04-22T06:47:08.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>NexT</tag>
+         
+         
+           
+             
+              <breadCrumb title="教程" url="https://Jan9th.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://Jan9th.github.io/2017/05/21/RxJava-%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2017-05-27T16:40:34.751Z</lastmod>
+    <lastmod>2017-05-29T07:47:51.917Z</lastmod>
     <data>
         <display>
         <title>RxJava 学习</title>
@@ -55,28 +97,6 @@
            
              
               <breadCrumb title="默认分类" url="https://Jan9th.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://Jan9th.github.io/2017/04/22/Hexo-NexT-%E4%BD%BF%E7%94%A8%E4%B8%AD%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82/</loc>
-    <lastmod>2017-05-26T14:38:12.612Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo NexT 使用中的小细节</title>
-        <pubTime>2017-04-22T06:47:08.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>NexT</tag>
-         
-         
-           
-             
-              <breadCrumb title="教程" url="https://Jan9th.github.io/categories/%E6%95%99%E7%A8%8B/"/>
           
         </display>
     </data>
