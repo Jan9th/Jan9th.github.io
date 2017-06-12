@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://Jan9th.github.io/2017/04/22/Hexo-NexT-%E4%BD%BF%E7%94%A8%E4%B8%AD%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82/</loc>
-    <lastmod>2017-06-12T15:56:29.944Z</lastmod>
+    <lastmod>2017-06-12T16:07:52.273Z</lastmod>
     <data>
         <display>
         <title>Hexo NexT 使用中的小细节</title>
@@ -19,6 +19,26 @@
            
              
               <breadCrumb title="教程" url="https://Jan9th.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://Jan9th.github.io/2017/06/03/Activity-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
+    <lastmod>2017-06-12T16:00:43.950Z</lastmod>
+    <data>
+        <display>
+        <title>Activity 的生命周期</title>
+        <pubTime>2017-06-02T16:31:10.000Z</pubTime>
+        
+        <tag>默认标签</tag>
+         
+         
+           
+             
+              <breadCrumb title="默认分类" url="https://Jan9th.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/"/>
           
         </display>
     </data>
@@ -79,26 +99,6 @@
            
              
               <breadCrumb title="链接" url="https://Jan9th.github.io/categories/%E9%93%BE%E6%8E%A5/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://Jan9th.github.io/2017/06/03/Activity-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</loc>
-    <lastmod>2017-06-02T16:44:29.434Z</lastmod>
-    <data>
-        <display>
-        <title>Activity 的生命周期</title>
-        <pubTime>2017-06-02T16:31:10.000Z</pubTime>
-        
-        <tag>默认标签</tag>
-         
-         
-           
-             
-              <breadCrumb title="默认分类" url="https://Jan9th.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/"/>
           
         </display>
     </data>
