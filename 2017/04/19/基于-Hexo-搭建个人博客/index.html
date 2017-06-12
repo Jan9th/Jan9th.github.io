@@ -99,7 +99,7 @@
 <meta property="og:url" content="https://Jan9th.github.io/2017/04/19/基于-Hexo-搭建个人博客/index.html">
 <meta property="og:site_name" content="Jan9th">
 <meta property="og:description" content="摘要 博客由 GitHub 托管，采用 GitHub Pager 静态网页 + Hexo 博客框架 + NexT 主题，本文介绍了博客搭建的关键步骤。">
-<meta property="og:updated_time" content="2017-05-24T13:49:50.637Z">
+<meta property="og:updated_time" content="2017-06-12T15:51:10.636Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于 Hexo 搭建个人博客">
 <meta name="twitter:description" content="摘要 博客由 GitHub 托管，采用 GitHub Pager 静态网页 + Hexo 博客框架 + NexT 主题，本文介绍了博客搭建的关键步骤。">
@@ -367,8 +367,8 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-05-24T21:49:50+08:00">
-                2017-05-24
+              <time title="更新于" itemprop="dateModified" datetime="2017-06-12T23:51:10+08:00">
+                2017-06-12
               </time>
             
           </span>
@@ -422,7 +422,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  1,305
+                  1,308
                 </span>
               
 
@@ -471,63 +471,18 @@
 </code></pre><blockquote>
 <p>构建 <code>Hexo</code> 、<code>Node.js</code> 等初始化环境，<code>$</code> 是自动生成的。</p>
 </blockquote>
-<h2 id="GitHub-认证"><a href="#GitHub-认证" class="headerlink" title="GitHub 认证"></a>GitHub 认证</h2><h3 id="配置-username-和-email"><a href="#配置-username-和-email" class="headerlink" title="配置 username 和 email"></a>配置 username 和 email</h3><pre><code>$ git config --global user.name &quot;username&quot; # 设置用户名      
-$ git config --global user.email &quot;me@email.com&quot; # 设置邮箱       
-$ git config --global user.name # 查看用户名     
-$ git config --global user.email # 查看邮箱         
-</code></pre><blockquote>
-<p>用户名和邮箱是任意的，影响不大。</p>
-</blockquote>
-<h3 id="生成认证指纹"><a href="#生成认证指纹" class="headerlink" title="生成认证指纹"></a>生成认证指纹</h3><pre><code>$ ls ~/.ssh # 检查认证指纹 ssh key 设置，不区分大小。
+<h2 id="GitHub-认证"><a href="#GitHub-认证" class="headerlink" title="GitHub 认证"></a>GitHub 认证</h2><h3 id="配置-username-和-email"><a href="#配置-username-和-email" class="headerlink" title="配置 username 和 email"></a>配置 username 和 email</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">	 $ git config --global user.name &quot;username&quot; # 设置用户名  	</div><div class="line">	 $ git config --global user.email &quot;me@email.com&quot; # 设置邮箱 	  </div><div class="line">	 $ git config --global user.name # 查看用户名 	</div><div class="line">	 $ git config --global user.email # 查看邮箱 	 </div><div class="line">```   </div><div class="line">&gt; 用户名和邮箱是任意的，影响不大。</div><div class="line"></div><div class="line">### 生成认证指纹</div></pre></td></tr></table></figure>
+<pre><code>$ ls ~/.ssh # 检查认证指纹 ssh key 设置，不区分大小。
 $ ssh-keygen -t rsa -C &quot;me@email.com&quot; # C 为大写字母，其后为邮箱
-</code></pre><blockquote>
-<p>输入 <code>ssh key</code> 保存位置，输入并确认密码，均可以直接回车默认。</p>
-</blockquote>
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt; 输入 `ssh key` 保存位置，输入并确认密码，均可以直接回车默认。</div></pre></td></tr></table></figure>
 <pre><code>$ ls ~/.ssh # 检查 ssh key
 $ cat ~/.ssh/id_rsa.pub # 抓取配置中的 ssh key，可以先复制下来。
-</code></pre><blockquote>
-<p>email 是用于生成 ssh key，可以是其他的，也可以理解为生成 ssh key 的一个<code>关键字</code>。</p>
-</blockquote>
-<h3 id="添加-ssh-key"><a href="#添加-ssh-key" class="headerlink" title="添加 ssh key"></a>添加 ssh key</h3><blockquote>
-<p>GitHub 账号的 <code>Personal settings</code> 下 <code>SSH and keys</code> 中添加生成的 ssh key 。</p>
-</blockquote>
-<h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><blockquote>
-<p><code>GitHubName：GitHubName.github.io # GitHubName 为 GitHub 用户名，这是约定好的。</code></p>
-</blockquote>
-<h3 id="创建连接"><a href="#创建连接" class="headerlink" title="创建连接"></a>创建连接</h3><pre><code>$ ssh -T git@github.com # T 不能为小写
-</code></pre><blockquote>
-<p>测试本机与 GitHub 之间的 ssh key 连接/是否有效（或是否可以连接）</p>
-</blockquote>
-<ul>
-<li>若第一次配置，最后出现 <code>Are you sure ...（yes/no）?</code> 字样，键入 <code>yes</code> 确认。</li>
-<li>若配置过，会直接显示配置的用户名。</li>
-</ul>
-<h2 id="快速启动"><a href="#快速启动" class="headerlink" title="快速启动"></a>快速启动</h2><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><pre><code>$ hexo init X:\Blog # 在硬盘 X 分区，自定义 Blog 文件夹中初始化。
-</code></pre><h3 id="生成网页"><a href="#生成网页" class="headerlink" title="生成网页"></a>生成网页</h3><pre><code>$ hexo g # hexo generate 生成静态网页 
-</code></pre><h3 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h3><pre><code>$ hexo s # hexo server 启动本地预览服务    
-</code></pre><blockquote>
-<p>本机 <code>localhost:4000</code> 或 <code>http://localhost:4000</code> 可以查看效果，<br><code>https://localhost:4000</code> https 协议无法通过。</p>
-</blockquote>
-<h2 id="拉取仓库"><a href="#拉取仓库" class="headerlink" title="拉取仓库"></a>拉取仓库</h2><pre><code>$ git clone &lt;repo&gt; .deploy/xxx
-</code></pre><p>或者 </p>
-<pre><code>$ git clone &lt;repo&gt; .deploy/xxx
-</code></pre><p>创建本地仓库，若直接下载解压，没有 <code>.git</code> 忽略文件，可以尝试 <code>git init</code> 指令，效果未知。</p>
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line">&gt; email 是用于生成 ssh key，可以是其他的，也可以理解为生成 ssh key 的一个`关键字`。</div><div class="line"></div><div class="line">### 添加 ssh key </div><div class="line">&gt; GitHub 账号的 `Personal settings` 下 `SSH and keys` 中添加生成的 ssh key 。</div><div class="line"></div><div class="line">### 创建仓库</div><div class="line">&gt; `GitHubName：GitHubName.github.io # GitHubName 为 GitHub 用户名，这是约定好的。`</div><div class="line"></div><div class="line">### 创建连接</div><div class="line">	$ ssh -T git@github.com # T 不能为小写</div><div class="line">&gt; 测试本机与 GitHub 之间的 ssh key 连接/是否有效（或是否可以连接）</div><div class="line">	</div><div class="line">- 若第一次配置，最后出现 `Are you sure ...（yes/no）?` 字样，键入 `yes` 确认。</div><div class="line">- 若配置过，会直接显示配置的用户名。</div><div class="line"></div><div class="line">##	快速启动</div><div class="line">###	初始化</div><div class="line">	$ hexo init X:\Blog # 在硬盘 X 分区，自定义 Blog 文件夹中初始化。</div><div class="line"></div><div class="line">### 生成网页</div><div class="line">	$ hexo g # hexo generate 生成静态网页 </div><div class="line"></div><div class="line">### 启动服务</div><div class="line">	$ hexo s # hexo server 启动本地预览服务	</div><div class="line"></div><div class="line">&gt; 本机 `localhost:4000` 或 `http://localhost:4000` 可以查看效果，</div><div class="line">`https://localhost:4000` https 协议无法通过。</div><div class="line"></div><div class="line">## 	拉取仓库</div><div class="line">	$ git clone &lt;repo&gt; .deploy/xxx</div><div class="line"></div><div class="line">或者 </div><div class="line"></div><div class="line">	$ git clone &lt;repo&gt; .deploy/xxx</div><div class="line">创建本地仓库，若直接下载解压，没有 `.git` 忽略文件，可以尝试 `git init` 指令，效果未知。</div><div class="line"></div><div class="line">&gt; `repo` 是仓库地址 `.deploy` 和 `xxx` 是文件夹</div><div class="line"></div><div class="line">## 	创建脚本</div><div class="line"></div><div class="line">``` </div><div class="line"></div><div class="line">	cd X：/Blog # 切换到网站根目录</div><div class="line">	hexo clean # 清除</div><div class="line">	hexo g # 生成</div><div class="line">	cp -R public/* .deploy/xxx # copy </div><div class="line">	cd .deploy/xxx # 切换目录</div><div class="line">	git add . # add</div><div class="line">	git commit -m &quot;update&quot; # 提交信息</div><div class="line">	git push origin master # 推送</div></pre></td></tr></table></figure>
 <blockquote>
-<p><code>repo</code> 是仓库地址 <code>.deploy</code> 和 <code>xxx</code> 是文件夹</p>
-</blockquote>
-<h2 id="创建脚本"><a href="#创建脚本" class="headerlink" title="创建脚本"></a>创建脚本</h2><pre><code>cd X：/Blog # 切换到网站根目录
-hexo clean # 清除
-hexo g # 生成
-cp -R public/* .deploy/xxx # copy 
-cd .deploy/xxx # 切换目录
-git add . # add
-git commit -m &quot;update&quot; # 提交信息
-git push origin master # 推送
-</code></pre><blockquote>
 <p>更改 <code>X</code> 和 <code>Blog</code> 对应到安装路径根目录</p>
 <h2 id="文章创建"><a href="#文章创建" class="headerlink" title="文章创建"></a>文章创建</h2><h3 id="创建新文件"><a href="#创建新文件" class="headerlink" title="创建新文件"></a>创建新文件</h3><pre><code>$ hexo new Hello
 </code></pre></blockquote>
-<h3 id="生成网页-1"><a href="#生成网页-1" class="headerlink" title="生成网页"></a>生成网页</h3><pre><code>$ hexo g    
+<h3 id="生成网页"><a href="#生成网页" class="headerlink" title="生成网页"></a>生成网页</h3><pre><code>$ hexo g    
 </code></pre><h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><blockquote>
 <p>每次更换主题前需要更改网站配置文件 <code>_config.yml</code> 中 <code>themes</code> 节点对应的本地已有的主题名，Blog 安装目录/子目录下执行 <code>$ hexo clean</code> 清除旧主题,再执行静态网页生成 <code>$ hexo g</code> 、本地预览 <code>$ hexo s</code>、部署 <code>$ hexo d</code> 步骤。</p>
 </blockquote>
@@ -764,7 +719,7 @@ $ origin  remoteRepoAdress (push)</code>    <blockquote>
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-count">21</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -955,7 +910,7 @@ $ origin  remoteRepoAdress (push)</code>    <blockquote>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具安装"><span class="nav-number">2.</span> <span class="nav-text">工具安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">2.1.</span> <span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Git-工具"><span class="nav-number">2.2.</span> <span class="nav-text">安装 Git 工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-Git-工具安装-Hexo"><span class="nav-number">2.3.</span> <span class="nav-text">使用 Git 工具安装 Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-认证"><span class="nav-number">3.</span> <span class="nav-text">GitHub 认证</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置-username-和-email"><span class="nav-number">3.1.</span> <span class="nav-text">配置 username 和 email</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成认证指纹"><span class="nav-number">3.2.</span> <span class="nav-text">生成认证指纹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加-ssh-key"><span class="nav-number">3.3.</span> <span class="nav-text">添加 ssh key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建仓库"><span class="nav-number">3.4.</span> <span class="nav-text">创建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建连接"><span class="nav-number">3.5.</span> <span class="nav-text">创建连接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快速启动"><span class="nav-number">4.</span> <span class="nav-text">快速启动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化"><span class="nav-number">4.1.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成网页"><span class="nav-number">4.2.</span> <span class="nav-text">生成网页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动服务"><span class="nav-number">4.3.</span> <span class="nav-text">启动服务</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拉取仓库"><span class="nav-number">5.</span> <span class="nav-text">拉取仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建脚本"><span class="nav-number">6.</span> <span class="nav-text">创建脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章创建"><span class="nav-number">7.</span> <span class="nav-text">文章创建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建新文件"><span class="nav-number">7.1.</span> <span class="nav-text">创建新文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成网页-1"><span class="nav-number">7.2.</span> <span class="nav-text">生成网页</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换主题"><span class="nav-number">8.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程仓库"><span class="nav-number">9.</span> <span class="nav-text">远程仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化本地"><span class="nav-number">9.1.</span> <span class="nav-text">初始化本地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拉取到本地"><span class="nav-number">9.2.</span> <span class="nav-text">拉取到本地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加多个远程仓库"><span class="nav-number">9.3.</span> <span class="nav-text">添加多个远程仓库</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用指令"><span class="nav-number">10.</span> <span class="nav-text">常用指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题"><span class="nav-number">11.</span> <span class="nav-text">常见问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考及收藏"><span class="nav-number">12.</span> <span class="nav-text">参考及收藏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站"><span class="nav-number">13.</span> <span class="nav-text">网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客改造"><span class="nav-number">14.</span> <span class="nav-text">博客改造</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地预览"><span class="nav-number">15.</span> <span class="nav-text">本地预览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#待改造"><span class="nav-number">16.</span> <span class="nav-text">待改造</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具安装"><span class="nav-number">2.</span> <span class="nav-text">工具安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">2.1.</span> <span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Git-工具"><span class="nav-number">2.2.</span> <span class="nav-text">安装 Git 工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-Git-工具安装-Hexo"><span class="nav-number">2.3.</span> <span class="nav-text">使用 Git 工具安装 Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-认证"><span class="nav-number">3.</span> <span class="nav-text">GitHub 认证</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置-username-和-email"><span class="nav-number">3.1.</span> <span class="nav-text">配置 username 和 email</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章创建"><span class="nav-number">4.</span> <span class="nav-text">文章创建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建新文件"><span class="nav-number">4.1.</span> <span class="nav-text">创建新文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成网页"><span class="nav-number">4.2.</span> <span class="nav-text">生成网页</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换主题"><span class="nav-number">5.</span> <span class="nav-text">更换主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程仓库"><span class="nav-number">6.</span> <span class="nav-text">远程仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化本地"><span class="nav-number">6.1.</span> <span class="nav-text">初始化本地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拉取到本地"><span class="nav-number">6.2.</span> <span class="nav-text">拉取到本地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加多个远程仓库"><span class="nav-number">6.3.</span> <span class="nav-text">添加多个远程仓库</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用指令"><span class="nav-number">7.</span> <span class="nav-text">常用指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题"><span class="nav-number">8.</span> <span class="nav-text">常见问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考及收藏"><span class="nav-number">9.</span> <span class="nav-text">参考及收藏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站"><span class="nav-number">10.</span> <span class="nav-text">网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客改造"><span class="nav-number">11.</span> <span class="nav-text">博客改造</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地预览"><span class="nav-number">12.</span> <span class="nav-text">本地预览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#待改造"><span class="nav-number">13.</span> <span class="nav-text">待改造</span></a></li></ol></div>
             
 
           </div>
